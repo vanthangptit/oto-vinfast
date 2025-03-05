@@ -1,0 +1,76 @@
+<header class="header js-header">
+  <div class="container">
+    <div class="inform">
+      <div class="inform__left">
+        <% for(var i = 0; i < data.personal.length; i++) { %>
+          <span><%= data.personal[i] %></span>
+        <% } %>
+      </div>
+      <div class="inform__right">
+        <ul class="inform__language">
+          <span class="js-inform-language">
+            <%= data.language.activeText %>
+          </span>
+          <ul>
+            <% for(var i = 0; i < data.language.dropdown.length; i++) { %>
+              <a class="text-primary" href="<%= data.language.dropdown[i].href %>"
+                 aria-disabled="<%= data.language.dropdown[i].disabled %>">
+                <%= data.language.dropdown[i].text %>
+              </a>
+            <% } %>
+          </ul>
+        </ul>
+        <ul class="inform__social">
+          <% for(var i = 0; i < data.social.length; i++) { %>
+            <a href="<%= data.social[i].href %>" class="fa <%= data.social[i].icon %>"
+               title="<%= data.social[i].title %>"></a>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-contain bg-secondary">
+    <div class="container">
+      <nav class="navbar-main">
+        <a class="nav-logo" href="<%= data.logo.href %>" alt="Home Page">
+          <%= data.logo.text %>
+        </a>
+
+        <div class="hamburger-icon js-hamburger-icon"><span></span></div>
+
+        <ul class="navbar-nav">
+          <% for(var i = 0; i < data.menu.length; i++) { %>
+            <% if(data.menu[i].subItems) { %>
+              <li class="navbar-nav__item item-dropdown js-item-dropdown">
+                <a class="navbar-nav__link" alt="<%= data.menu[i].alt %>" title="<%= data.menu[i].title %>">
+                  <%= data.menu[i].text %>
+                </a>
+
+                <ul class="bg-secondary">
+                  <% for(var j = 0; j < data.menu[i].subItems.length; j++) { %>
+                    <li class="navbar-nav__item">
+                      <a class="navbar-nav__link" href="<%= data.menu[i].subItems[j].href %>" alt="<%= data.menu[i].subItems[j].alt %>">
+                        <%= data.menu[i].subItems[j].text %>
+                      </a>
+                    </li>
+                  <% } %>
+                </ul>
+              </li>
+            <% } else { %>
+              <li class="navbar-nav__item <% if (data.menu[i].isHomePage) { %>d-block d-md-none<% }%>">
+                <a class="navbar-nav__link" href="<%= data.menu[i].href %>"
+                   alt="<%= data.menu[i].alt %>" title="<%= data.menu[i].title %>"><%= data.menu[i].text %></a>
+              </li>
+            <% } %>
+          <% } %>
+        </ul>
+        <div class="navbar-main__backdrop hidden js-backdrop"></div>
+      </nav>
+    </div>
+  </div>
+
+  <% if (data.masthead) { %>
+    <%- include('../components/molecules/masthead', { data: data.masthead }); %>
+  <% }%>
+</header>

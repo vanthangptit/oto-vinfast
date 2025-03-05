@@ -1,0 +1,68 @@
+{
+  "footerTop": {
+    "left": {
+      "title": "TNV Blog",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
+      "social": [
+        {
+          "href": "#",
+          "icon": "fa-facebook"
+        },
+        {
+
+          "href": "#",
+          "icon": "fa-twitter"
+        },
+        {
+          "href": "#",
+          "icon": "fa-google-plus"
+        },
+        {
+          "href": "#",
+          "icon": "fa-pinterest"
+        }
+      ]
+    },
+    "middle": {
+      "title": "Information",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "info": ["<span>Tel: </span><a href='tel:123 456 789'>+123 456 789</a>", "<span>Email:</span> contact@example.com", "<span>Working Hours: </span>9am-5pm" ]
+    },
+    "right": {
+      "title": "INSTAGRAM",
+      "instagram": [
+        {
+          "href": "#",
+          "image": "/static/images/instagram/1.jpg",
+          "alt": "Instagram"
+        },
+        {
+          "href": "#",
+          "image": "/static/images/instagram/2.jpg",
+          "alt": "Instagram"
+        },
+        {
+          "href": "#",
+          "image": "/static/images/instagram/3.jpg",
+          "alt": "Instagram"
+        },
+        {
+          "href": "#",
+          "image": "/static/images/instagram/4.jpg",
+          "alt": "Instagram"
+        },
+        {
+          "href": "#",
+          "image": "/static/images/instagram/5.jpg",
+          "alt": "Instagram"
+        },
+        {
+          "href": "#",
+          "image": "/static/images/instagram/6.jpg",
+          "alt": "Instagram"
+        }
+      ]
+    }
+  },
+  "footerBottom": "© Copyright <span>NVTDesign</span>. All Rights Reserved"
+}

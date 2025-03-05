@@ -1,0 +1,48 @@
+<footer class="footer">
+  <section class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-6">
+          <h2 class="footer-top__logo-title"><%= data.footerTop.left.title %></h2>
+          <p class="footer-top__text"><%= data.footerTop.left.description %></p>
+
+          <div class="footer-top__social">
+            <% for(var i = 0; i < data.footerTop.left.social.length; i++) { %>
+              <a href="<%= data.footerTop.left.social[i].href %>" class="footer-top__social-link">
+                <span class="fa <%= data.footerTop.left.social[i].icon %>"></span>
+              </a>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-6">
+          <h4 class="footer-top__title"><%= data.footerTop.middle.title %></h4>
+          <p class="footer-top__text"><%= data.footerTop.middle.description %></p>
+          <div class="footer-top__info">
+            <% for(var i = 0; i < data.footerTop.middle.info.length; i++) { %>
+              <p><%- data.footerTop.middle.info[i] %></p>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-6">
+          <h4 class="footer-top__title"><%= data.footerTop.right.title %></h4>
+
+          <div class="footer-top__instagram">
+            <% for(var i = 0; i < data.footerTop.right.instagram.length; i++) { %>
+              <div class="footer-top__instagram-columns">
+                <a href="<%= data.footerTop.right.instagram[i].href %>" class="footer-top__instagram-link">
+                  <img src="<%= data.footerTop.right.instagram[i].image %>" alt="<%= data.footerTop.right.instagram[i].alt %>">
+                </a>
+              </div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-bottom">
+    <p class="footer-bottom__no-copy-right"><%- data.footerBottom %></p>
+  </section>
+</footer>

@@ -1,0 +1,91 @@
+{
+  "logo": {
+    "text": "TNV Blog",
+    "href": "/"
+  },
+  "personal": [
+    "Dac So - Hoai Duc - Ha Noi",
+    "0383 249-189",
+    "nguyenthang.fe@gmail.com"
+  ],
+  "language": {
+    "activeText": "Vietnamese",
+    "dropdown": [
+      {
+        "href": "#",
+        "disabled": "false",
+        "text": "Vietnamese"
+      },
+      {
+        "href": "#",
+        "disabled": "true",
+        "text": "English"
+      },
+      {
+        "href": "#",
+        "disabled": "true",
+        "text": "Japan"
+      }
+    ]
+  },
+  "social": [
+    {
+      "href": "#",
+      "icon": "fa-twitter-square",
+      "title": "Twitter"
+    },
+    {
+      "href": "#",
+      "icon": "fa-facebook",
+      "title": "Facebook"
+    },
+    {
+      "href": "#",
+      "icon": "fa-google-plus",
+      "title": "Google Plus"
+    },
+    {
+      "href": "#",
+      "icon": "fa-youtube-square",
+      "title": "Youtube"
+    }
+  ],
+  "menu": [
+    {
+      "isHomePage": true,
+      "text": "Home",
+      "title": "Home page",
+      "href": "/",
+      "alt": "Home page"
+    },
+    {
+      "text": "About Me",
+      "title": "About me",
+      "href": "/about",
+      "alt": "About me"
+    },
+    {
+      "text": "Blog",
+      "title": "Blog page",
+      "href": "/blog",
+      "alt": "Blog page"
+    },
+    {
+      "text": "Admin",
+      "title": "Admin page",
+      "alt": "Admin page",
+      "subItems": [
+        {
+          "text": "Posts",
+          "href": "/admin/post",
+          "alt": "Posts page"
+        },
+        {
+          "text": "Users",
+          "href": "/admin/user",
+          "alt": "User page"
+        }
+      ]
+    }
+  ]
+}
