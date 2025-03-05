@@ -1,0 +1,14 @@
+@use "../variables";
+
+.header {
+  @media #{variables.$media-sm-down} {
+    &.is-fixed {
+      position: fixed;
+      z-index: variables.$z-index-topmost;
+      top: 0;
+      left: 0;
+      width:100%;
+      animation: downEnterAnimation .5s;
+    }
+  }
+}

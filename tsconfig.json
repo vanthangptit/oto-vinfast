@@ -1,6 +1,7 @@
 {
+  "files": ["src/app.ts"],
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es5",
     "module": "commonjs",
     "types": [
       "node"

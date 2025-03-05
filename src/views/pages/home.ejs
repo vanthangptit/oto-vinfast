@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
-    <head>
+<%- include('../layout/head'); %>
+<body>
+  <main>
+    <div class="container" id="wrap">
+      <div class="row">
+        <%- data.contents %>
+      </div>
+    </div>
+  </main>
 
-    </head>
-    <body>
-        <main>
-            <div class="container" id="wrap">
-                <div class="row">
-                    1
-                </div>
-            </div>
-        </main>
-    </body>
+  <%- include('../layout/footer', { data: footer }); %>
+  <%- include('../layout/scripts'); %>
+</body>
 </html>

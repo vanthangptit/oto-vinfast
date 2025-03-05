@@ -1,0 +1,139 @@
+@use "../variables";
+@use 'sass:math';
+
+.footer {
+  margin-top: 2.5rem;
+
+  @media #{variables.$media-sm-down} {
+    margin-top: 1.5rem;
+  }
+}
+
+.footer-top {
+  &__logo-title {
+    color: variables.$color-logo-footer;
+    padding: 0;
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-family: norwester;
+  }
+
+  &__social {
+    margin-bottom: 30px;
+  }
+
+  &__social-link {
+    color: variables.$color-social-link;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid variables.$color-social-link;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover,
+    &:focus {
+      color: variables.$color-secondary;
+      border: 1px solid variables.$color-tertiary;
+      background-color: variables.$color-tertiary;
+    }
+  }
+
+  &__title {
+    color: variables.$color-social-link;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    & > p {
+      margin-bottom: 0;
+
+      & > span {
+        color: variables.$color-tertiary;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__instagram {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__instagram-columns {
+    flex: 0 0 math.percentage(calc(4/12));
+    max-width: math.percentage(calc(4/12));
+  }
+
+  &__instagram-link {
+    display: flex;
+    margin: 0 6px 6px 0;
+    overflow: hidden;
+
+    img {
+      transition: .4s;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+
+  @media #{variables.$media-sm-down} {
+    .col-xs-6 {
+      flex: 0 0 math.percentage(calc(6/12));
+      max-width: math.percentage(calc(6/12));
+    }
+
+    &__logo-title {
+      margin-top: 0;
+    }
+
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__info {
+      margin-bottom: 30px;
+
+      * {
+        font-size: 14px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  @media #{variables.$media-xs-down} {
+    .col-xs-6 {
+      flex: 0 0 math.percentage(calc(12/12));
+      max-width: math.percentage(calc(12/12));
+    }
+  }
+}
+
+.footer-bottom {
+  background: variables.$bg-footer-bottom;
+  padding: 20px 0;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+
+  @media #{variables.$media-sm-down} {
+    font-size: 14px;
+  }
+}

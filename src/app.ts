@@ -1,6 +1,7 @@
 import express, { Application, Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
+const path = require('path');
 
 import contactRouter from './modules/v1/contact/routes/contactRoutes';
 
@@ -25,12 +26,14 @@ const init = async () => {
   //middleware for cookies
   app.use(cookieParser());
 
-  // Pages
+  // Setting the page
   app.set('views', __dirname + '/views/pages');
   app.set('view engine', 'ejs');
 
-  // Routes
+  // Route Pages
   app.use('/', homeRouter);
+
+  // Route APIs
   app.use('/api/v1/contact', contactRouter);
 
   // Error handlers middleware
@@ -44,8 +47,8 @@ const init = async () => {
   });
 
   // Static files
-  app.use('/static', express.static(__dirname + '/../dist'));
-  app.use(express.static('public'));
+  //@todo: Double check. It's not working now
+  app.use('/static', express.static(path.join(__dirname, '/../dist')));
 
   //@todo: Double check DB
   // await connectDB();
