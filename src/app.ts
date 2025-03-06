@@ -1,7 +1,6 @@
 import express, { Application, Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
-const path = require('path');
 
 import contactRouter from './modules/v1/contact/routes/contactRoutes';
 
@@ -33,6 +32,9 @@ const init = async () => {
   // Route Pages
   app.use('/', homeRouter);
 
+  // Static files
+  app.use('/static', express.static(__dirname + '/../dist'));
+
   // Route APIs
   app.use('/api/v1/contact', contactRouter);
 
@@ -45,10 +47,6 @@ const init = async () => {
       message: `${req.originalUrl} - Route not found`,
     });
   });
-
-  // Static files
-  //@todo: Double check. It's not working now
-  app.use('/static', express.static(path.join(__dirname, '/../dist')));
 
   //@todo: Double check DB
   // await connectDB();

@@ -106,18 +106,34 @@ img {
 p { margin-bottom: 1rem; }
 
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 
 $font-path: '../fonts/';
 @font-face {
   font-family: 'Roboto';
-  src: url($font-path + 'Roboto-Light.ttf') format('truetype');
+  src: url($font-path + 'Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url($font-path + 'Roboto-Light.ttf') format('truetype')
+  url($font-path + 'Roboto-Light.woff') format('woff');
   font-weight: 300;
 }
 @font-face {
   font-family: 'Roboto';
-  src: url($font-path + 'Roboto-Regular.ttf') format('truetype');
+  src: url($font-path + 'Roboto-Regular.ttf') format('truetype'),
+  url($font-path + 'Roboto-Regular.woff') format('woff');
   font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url($font-path + 'Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url($font-path + 'Roboto-SemiBold.ttf') format('truetype');
+  font-weight: 600;
 }
 @font-face {
   font-family: 'Roboto';
@@ -125,9 +141,14 @@ $font-path: '../fonts/';
   font-weight: 700;
 }
 @font-face {
-  font-family: 'norwester';
-  src: url($font-path + 'norwester.otf') format('opentype');
-  font-weight: 400;
+  font-family: 'Roboto';
+  src: url($font-path + 'Roboto-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url($font-path + 'Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
 }
 .container {
   max-width: variables.$container-max-width;

@@ -5,10 +5,11 @@ const cleanCSS = require('gulp-clean-css');
 const clean = require('gulp-clean');
 
 const paths = {
-  styles : [ 'src/public/styles/**/*.scss' ],
+  styles : [
+    'src/public/styles/**/*.scss',
+  ],
   fonts : [
     'src/public/fonts/**/*.*',
-    'node_modules/font-awesome/fonts/**/*.*',
   ],
   images : [ 'src/public/images/**/*.*' ],
   scripts : [ 'src/public/scripts/**/*.js' ],
@@ -59,8 +60,8 @@ function vendorScripts() {
 }
 
 function cleanFolder() {
-  return gulp.src(`${dest.dist}`, { read: false })
-    .pipe(clean());
+  return gulp.src(`${dest.dist}`, { allowEmpty: true })
+    .pipe(clean({ force: true }));
 }
 
 function watch () {
