@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   const header = document.querySelector('.js-header');
   const body = document.querySelector('body');
+  let SCROLL_Y = 0;
+
   if (!header) return;
 
-  const informLanguage = header.querySelector('.js-inform-language');
   const hamburgerIcon = header.querySelector('.js-hamburger-icon');
   const backdrop = header.querySelector('.js-backdrop');
   const navbarNav = header.querySelector('.navbar-nav');
@@ -23,6 +24,21 @@ document.addEventListener('DOMContentLoaded', function () {
     backdrop.classList.add('hidden');
   }
 
+  function scrollHandler(e) {
+    if (SCROLL_Y > window.scrollY) { // Scroll up
+      if (window.scrollY === 0) {
+        console.log('dang len')
+      }
+    } else { // Scroll down
+      const heightHeader = header.offsetHeight;
+      if (window.scrollY > heightHeader) {
+        console.log('dang xuong')
+      }
+    }
+
+    SCROLL_Y = window.scrollY;
+  }
+
   for (let item of itemDropdowns) {
     item.onclick = function () {
       this.classList.contains('open') ? this.classList.remove('open') :
@@ -30,24 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  informLanguage.onclick = function (e) {
-    const parent = this.parentElement;
-    parent.classList.contains('show') ? parent.classList.remove('show') : parent.classList.add('show');
-  };
-
   hamburgerIcon.onclick = function(e) {
     this.classList.contains('show') ? handleHideNavigation() : handleShowNavigation();
   };
 
   window.addEventListener('click', function(e) {
-    const langBox = informLanguage.parentElement;
-
-    if (!langBox.contains(e.target)) {
-      if (langBox.classList.contains('show')) {
-        langBox.classList.remove('show');
-      }
-    }
-
     for (let item of itemDropdowns) {
       if (!item.contains(e.target)) {
         if (item.classList.contains('open')) {
@@ -60,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
       handleHideNavigation();
     }
   });
+
+  window.addEventListener('scroll', scrollHandler);
 
   window.addEventListener('resize', function(e) {
     handleHideNavigation();
