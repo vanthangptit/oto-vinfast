@@ -1,5 +1,22 @@
 @use 'sass:map';
 
+// break points
+$break-point-360: 360px;
+$break-point-576: 576px;
+$break-point-768: 768px;
+$break-point-992: 992px;
+$break-point-1200: 1200px;
+$break-point-1230: 1230px;
+$break-max-point: $break-point-1230;
+$media-xs-down: '(max-width: #{$break-point-576 - 1})';
+$media-sm-down: '(max-width: #{$break-point-768 - 1})';
+$media-md-down: '(max-width: #{$break-point-992 - 1})';
+$media-lg-down: '(max-width: #{$break-point-1200 - 1})';
+$media-xs-up: '(min-width: #{$break-point-576 - 1})';
+$media-sm-up: '(min-width: #{$break-point-768})';
+$media-md-up: '(min-width: #{$break-point-992})';
+$media-lg-up: '(min-width: #{$break-point-1200})';
+
 //color
 $color-primary: #333333;
 $color-secondary: #fefefe;
@@ -38,54 +55,48 @@ $text-colors: map.merge(
 
 $color-transparent: rgba(255, 255, 255, 0);
 $border-bottom_menu: #1464f3;
-
-
+$box-shadow-fixed-header: #b1b1b1;
 $link-color:        $color-primary;
-$color-placeholder: #999999;
-$color-grey-ccc:    #cccccc;
-$color-box-shadow:  rgba(0, 0,  0, .3);
-$color-head-table:  #2a2a2a;
 $color-border:      #dee2e6;
-$bg-lang-dropdown:  #fefefe;
-$bg-nav-mobile:     #001c37;
-$color-logo-footer: #222;
-$color-social-link: #444;
+$color-logo-footer: #222222;
+$color-social-link: #444444;
 $bg-footer-bottom:  #f1f1f1;
 $color-scrollbar:   #b3b3b3;
-$bg-opacity:        #212529;
-$color-border-post: #dee2e6;
+$bg-backdrop-menu:  rgba(0, 29, 56, 0.7);
 
-// break points
-$break-point-360: 360px;
-$break-point-576: 576px;
-$break-point-768: 768px;
-$break-point-992: 992px;
-$break-point-1200: 1200px;
-$break-point-1230: 1230px;
-$break-max-point: $break-point-1230;
-$media-xs-down: '(max-width: #{$break-point-576 - 1})';
-$media-sm-down: '(max-width: #{$break-point-768 - 1})';
-$media-md-down: '(max-width: #{$break-point-992 - 1})';
-$media-lg-down: '(max-width: #{$break-point-1200 - 1})';
-$media-xs-up: '(min-width: #{$break-point-576 - 1})';
-$media-sm-up: '(min-width: #{$break-point-768 - 1})';
-$media-md-up: '(min-width: #{$break-point-992 - 1})';
-$media-lg-up: '(min-width: #{$break-point-1200 - 1})';
+// Gray
+$color-white: #fff !default;
+$color-gray-100: #f3f3f3 !default;
+$color-gray-200: #e9ecef !default;
+$color-gray-300: #dee2e6 !default;
+$color-gray-400: #ced4da !default;
+$color-gray-500: #b3b3b3 !default;
+$color-gray-600: #6c757d !default;
+$color-gray-700: #454545 !default;
+$color-gray-800: #393939 !default;
+$color-gray-900: #212529 !default;
+$color-black:    #000 !default;
 
+// Fonts
 $font-roboto: 'Roboto', sans-serif;
 $font-family-base: $font-roboto;
 $font-weight-base: 400;
 $line-height-base: 1.5;
 $font-base: 16px;
 
+// Z-index
+$z-index-1: 1;
+$z-index-2: 2;
+$z-index-backdrop: 98;
+$z-index-header: 99;
+$z-index-hamburger: 100;
+$z-index-navbar: 100;
+
+// Utils
 $min-vw: 360px;
 $max-vw: 1200px;
 $headings-line-height:  1.2;
 $container-max-width: $break-max-point;
-
-$z-index-1: 1;
-$z-index-2: 2;
-$z-index-topmost: 9999;
 
 // Add the custom styles
 @each $color, $value in $text-colors {

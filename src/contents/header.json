@@ -20,14 +20,40 @@
       "alt": "Sản Phẩm",
       "subItems": [
         {
-          "text": "Posts",
-          "href": "/admin/post",
-          "alt": "Posts page"
+          "img": "/static/images/vinfast-vf3.jpg",
+          "product_name": "Vinfast VF3",
+          "alt": "Vinfast VF3",
+          "href": "/san-pham.html"
         },
         {
-          "text": "Users",
-          "href": "/admin/user",
-          "alt": "User page"
+          "img": "/static/images/vinfast-vf5.jpg",
+          "product_name": "Vinfast VF5",
+          "alt": "Vinfast VF5",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf6.jpg",
+          "product_name": "Vinfast VF6",
+          "alt": "Vinfast VF6",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf7.jpg",
+          "product_name": "Vinfast VF7",
+          "alt": "Vinfast VF7",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf8.jpg",
+          "product_name": "Vinfast VF8",
+          "alt": "Vinfast VF8",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf9.jpg",
+          "product_name": "Vinfast VF9",
+          "alt": "Vinfast VF9",
+          "href": "/san-pham.html"
         }
       ]
     },

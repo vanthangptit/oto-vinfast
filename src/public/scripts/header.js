@@ -5,34 +5,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!header) return;
 
-  const hamburgerIcon = header.querySelector('.js-hamburger-icon');
+  const hamburgerIconElement = header.querySelector('.js-hamburger-icon');
+  const fixedHeaderElement = header.querySelector('.js-fixed-header');
   const backdrop = header.querySelector('.js-backdrop');
-  const navbarNav = header.querySelector('.navbar-nav');
-  const itemDropdowns = header.querySelectorAll('.js-item-dropdown');
+  const navbarMenu = header.querySelector('.js-navbar-menu');
+  const itemDropdowns = header.querySelectorAll('.js-icon-dropdown');
 
   function handleShowNavigation() {
-    hamburgerIcon.classList.add('show');
-    navbarNav.classList.add('show');
+    hamburgerIconElement.classList.add('show');
+    navbarMenu.classList.add('show');
     body.classList.add('hidden-scroll');
     backdrop.classList.remove('hidden');
   }
 
   function handleHideNavigation() {
-    hamburgerIcon.classList.remove('show');
-    navbarNav.classList.remove('show');
+    hamburgerIconElement.classList.remove('show');
+    navbarMenu.classList.remove('show');
     body.classList.remove('hidden-scroll');
     backdrop.classList.add('hidden');
   }
 
-  function scrollHandler(e) {
+  // Handling the fixed header
+  function scrollHandler() {
+    const navContainHeight = fixedHeaderElement.offsetHeight;
+    header.style.height = `${navContainHeight}px`;
+
     if (SCROLL_Y > window.scrollY) { // Scroll up
       if (window.scrollY === 0) {
-        console.log('dang len')
+        fixedHeaderElement.classList.remove('is-fixed');
       }
     } else { // Scroll down
-      const heightHeader = header.offsetHeight;
-      if (window.scrollY > heightHeader) {
-        console.log('dang xuong')
+      if (window.scrollY > navContainHeight + 15) {
+        if (fixedHeaderElement.classList.contains('is-fixed')) return;
+        fixedHeaderElement.classList.add('is-fixed');
       }
     }
 
@@ -40,13 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   for (let item of itemDropdowns) {
-    item.onclick = function () {
-      this.classList.contains('open') ? this.classList.remove('open') :
-        this.classList.add('open');
+    item.onclick = function (e) {
+      e.preventDefault();
+      const itemDropdownElement = this.closest('.item-dropdown');
+      if (!itemDropdownElement) return;
+      itemDropdownElement.classList.contains('open') ? itemDropdownElement.classList.remove('open') :
+        itemDropdownElement.classList.add('open');
     }
   }
 
-  hamburgerIcon.onclick = function(e) {
+  hamburgerIconElement.onclick = function(e) {
     this.classList.contains('show') ? handleHideNavigation() : handleShowNavigation();
   };
 
@@ -69,4 +77,6 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', function(e) {
     handleHideNavigation();
   });
+
+  scrollHandler();
 });
