@@ -1,0 +1,17 @@
+@use "../variables";
+
+.section-title {
+  text-align: center;
+
+  h3 {
+    font-size: 180%;
+    font-weight: bold;
+    color: variables.$color-section-title;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 115%;
+    font-weight: 300;
+  }
+}

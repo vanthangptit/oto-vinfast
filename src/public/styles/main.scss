@@ -4,6 +4,9 @@
 @use 'components/footer';
 @use 'components/navbar-main';
 @use 'components/masthead';
+@use 'components/section-title';
+@use 'components/button-link-showroom';
+@use 'components/showroom';
 
 //page
 @use 'pages/blog-page';

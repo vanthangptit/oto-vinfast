@@ -1,0 +1,9 @@
+@use "../variables";
+.showroom {
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__text-icon {
+    gap: 20px;
+  }
+}
