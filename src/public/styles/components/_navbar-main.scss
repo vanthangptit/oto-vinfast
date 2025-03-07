@@ -17,6 +17,7 @@ $padding-aside: 15px;
     left: 0;
     width:100%;
     animation: downEnterAnimation .5s;
+    background-color: variables.$color-white;
   }
 }
 .navbar-main {

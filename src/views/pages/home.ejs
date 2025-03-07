@@ -5,6 +5,10 @@
   <%- include('../layout/header', { data: header }); %>
 
   <main style="height: 10000px">
+    <% if (data.masthead) { %>
+      <%- include('../components/molecules/masthead', { data: data.masthead }); %>
+    <% }%>
+
     <div class="container" id="wrap">
       <div class="row">
         <%- data.contents %>

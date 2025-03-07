@@ -1,9 +1,41 @@
 {
   "titlePage": "Home - TNV Blog",
-  "masthead": {
-    "backgroundImage": "/static/images/slide04.png",
-    "titlePage": "TNV Blog",
-    "subtitle": "The Tech in your hand"
-  },
+  "masthead": [
+    {
+      "image": "/static/images/banner/vinfast-vf3-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf5-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf6-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-e34-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf8-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf7-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf9-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    }
+  ],
   "contents": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p><br/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p><br/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>"
 }

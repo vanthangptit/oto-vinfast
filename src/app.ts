@@ -13,7 +13,7 @@ import homeRouter from "./modules/v1/home/routes/homeRoutes";
 
 const app: Application = express();
 const { port } = conf;
-const PORT = port || 9700;
+const PORT = port || 9770;
 
 const init = async () => {
   app.use(bodyParser.json());
