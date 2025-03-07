@@ -80,6 +80,13 @@ input {
     //color: $color-text-body;
     outline: none;
   }
+
+  &[type="search"]::-webkit-search-decoration,
+  &[type="search"]::-webkit-search-cancel-button,
+  &[type="search"]::-webkit-search-results-button,
+  &[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
 }
 input,
 button,
@@ -101,18 +108,25 @@ strong {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 p { margin-bottom: 1rem; }
 
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-$font-path: '../fonts/';
-@font-face {
-  font-family: 'Roboto';
-  src: url($font-path + 'Roboto-Thin.ttf') format('truetype');
-  font-weight: 100;
+[class^="fa-"], [class*=" fa-"] {
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
+
+$font-path: '../fonts/';
 @font-face {
   font-family: 'Roboto';
   src: url($font-path + 'Roboto-Light.ttf') format('truetype')
@@ -125,30 +139,11 @@ $font-path: '../fonts/';
   url($font-path + 'Roboto-Regular.woff') format('woff');
   font-weight: 400;
 }
-@font-face {
-  font-family: 'Roboto';
-  src: url($font-path + 'Roboto-Medium.ttf') format('truetype');
-  font-weight: 500;
-}
+
 @font-face {
   font-family: 'Roboto';
   src: url($font-path + 'Roboto-SemiBold.ttf') format('truetype');
   font-weight: 600;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url($font-path + 'Roboto-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url($font-path + 'Roboto-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url($font-path + 'Roboto-Black.ttf') format('truetype');
-  font-weight: 900;
 }
 .container {
   max-width: variables.$container-max-width;
@@ -209,12 +204,29 @@ h3 {
   from { transform: rotate(-360deg);}
   to { transform: rotate(360deg);}
 }
+@keyframes downEnterAnimation {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 .hidden {
   display: none !important;
 }
 .no-pointer {
   pointer-events: none;
   opacity: 0.6;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 .table-responsive {
   &::-webkit-scrollbar {

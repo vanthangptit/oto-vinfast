@@ -2,7 +2,9 @@
 <html lang="en">
 <%- include('../layout/head'); %>
 <body>
-  <main>
+  <%- include('../layout/header', { data: header }); %>
+
+  <main style="height: 10000px">
     <div class="container" id="wrap">
       <div class="row">
         <%- data.contents %>

@@ -1,70 +1,57 @@
-<header class="header js-header">
-  <div class="container">
-    <div class="inform">
-      <div class="inform__left">
-        <% for(var i = 0; i < data.personal.length; i++) { %>
-          <span><%= data.personal[i] %></span>
-        <% } %>
-      </div>
-      <div class="inform__right">
-        <ul class="inform__language">
-          <span class="js-inform-language">
-            <%= data.language.activeText %>
-          </span>
-          <ul>
-            <% for(var i = 0; i < data.language.dropdown.length; i++) { %>
-              <a class="text-primary" href="<%= data.language.dropdown[i].href %>"
-                 aria-disabled="<%= data.language.dropdown[i].disabled %>">
-                <%= data.language.dropdown[i].text %>
-              </a>
-            <% } %>
-          </ul>
-        </ul>
-        <ul class="inform__social">
-          <% for(var i = 0; i < data.social.length; i++) { %>
-            <a href="<%= data.social[i].href %>" class="fa <%= data.social[i].icon %>"
-               title="<%= data.social[i].title %>"></a>
-          <% } %>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="nav-contain bg-secondary">
+<header class="js-header">
+  <div class="fixed-header js-fixed-header">
     <div class="container">
       <nav class="navbar-main">
-        <a class="nav-logo" href="<%= data.logo.href %>" alt="Home Page">
-          <%= data.logo.text %>
+        <a class="nav-logo" href="<%= data.logo.href %>">
+            <img src="<%= data.logo.img %>" alt="<%= data.logo.alt %>">
         </a>
 
         <div class="hamburger-icon js-hamburger-icon"><span></span></div>
 
-        <ul class="navbar-nav">
-          <% for(var i = 0; i < data.menu.length; i++) { %>
-            <% if(data.menu[i].subItems) { %>
-              <li class="navbar-nav__item item-dropdown js-item-dropdown">
-                <a class="navbar-nav__link" alt="<%= data.menu[i].alt %>" title="<%= data.menu[i].title %>">
-                  <%= data.menu[i].text %>
-                </a>
+        <div class="navbar-menu js-navbar-menu">
+          <div class="navbar-menu__box-search">
+            <input type="search">
+            <a class="js-search">
+              <span class="fa fa-search" aria-hidden="true"></span>
+            </a>
+          </div>
 
-                <ul class="bg-secondary">
-                  <% for(var j = 0; j < data.menu[i].subItems.length; j++) { %>
-                    <li class="navbar-nav__item">
-                      <a class="navbar-nav__link" href="<%= data.menu[i].subItems[j].href %>" alt="<%= data.menu[i].subItems[j].alt %>">
-                        <%= data.menu[i].subItems[j].text %>
-                      </a>
-                    </li>
-                  <% } %>
-                </ul>
-              </li>
+          <ul>
+            <% for(var i = 0; i < data.menu.length; i++) { %>
+            <% if(data.menu[i].subItems) { %>
+            <li class="navbar-menu__item item-dropdown">
+              <a class="navbar-menu__link" href="<%= data.menu[i].href %>" alt="<%= data.menu[i].alt %>" title="<%= data.menu[i].title %>">
+                <%= data.menu[i].text %>
+
+                <span class="navbar-menu__icon-down js-icon-dropdown fa fa-angle-down" aria-hidden="true"></span>
+              </a>
+
+              <ul class="navbar-menu__submenu">
+                <% for(var j = 0; j < data.menu[i].subItems.length; j++) { %>
+                <li class="navbar-menu__submenu-item">
+                  <a class="navbar-menu__product text-black" href="<%= data.menu[i].subItems[j].href %>">
+                    <span>
+                      <img src="<%= data.menu[i].subItems[j].img %>" alt="<%= data.menu[i].subItems[j].alt %>">
+                    </span>
+                    <h3><%= data.menu[i].subItems[j].product_name %></h3>
+                  </a>
+                </li>
+                <% } %>
+              </ul>
+            </li>
             <% } else { %>
-              <li class="navbar-nav__item <% if (data.menu[i].isHomePage) { %>d-block d-md-none<% }%>">
-                <a class="navbar-nav__link" href="<%= data.menu[i].href %>"
-                   alt="<%= data.menu[i].alt %>" title="<%= data.menu[i].title %>"><%= data.menu[i].text %></a>
-              </li>
+            <li class="navbar-menu__item <% if (data.menu[i].isHomePage) { %>d-block d-md-none<% }%>">
+              <a class="navbar-menu__link text-black" href="<%= data.menu[i].href %>"
+                 alt="<%= data.menu[i].alt %>" title="<%= data.menu[i].title %>"><%= data.menu[i].text %></a>
+            </li>
             <% } %>
-          <% } %>
-        </ul>
+            <% } %>
+          </ul>
+        </div>
+
+        <a class="nav-advisory cursor-pointer">
+          <img src="<%= data.advisory.img %>" alt="<%= data.advisory.alt %>">
+        </a>
         <div class="navbar-main__backdrop hidden js-backdrop"></div>
       </nav>
     </div>

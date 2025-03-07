@@ -1,91 +1,89 @@
 {
   "logo": {
     "text": "TNV Blog",
-    "href": "/"
+    "href": "/",
+    "img": "/static/images/logo-vf.jpg",
+    "alt": "logo website"
   },
-  "personal": [
-    "Dac So - Hoai Duc - Ha Noi",
-    "0383 249-189",
-    "nguyenthang.fe@gmail.com"
-  ],
-  "language": {
-    "activeText": "Vietnamese",
-    "dropdown": [
-      {
-        "href": "#",
-        "disabled": "false",
-        "text": "Vietnamese"
-      },
-      {
-        "href": "#",
-        "disabled": "true",
-        "text": "English"
-      },
-      {
-        "href": "#",
-        "disabled": "true",
-        "text": "Japan"
-      }
-    ]
-  },
-  "social": [
-    {
-      "href": "#",
-      "icon": "fa-twitter-square",
-      "title": "Twitter"
-    },
-    {
-      "href": "#",
-      "icon": "fa-facebook",
-      "title": "Facebook"
-    },
-    {
-      "href": "#",
-      "icon": "fa-google-plus",
-      "title": "Google Plus"
-    },
-    {
-      "href": "#",
-      "icon": "fa-youtube-square",
-      "title": "Youtube"
-    }
-  ],
   "menu": [
     {
       "isHomePage": true,
-      "text": "Home",
-      "title": "Home page",
+      "text": "TRANG CHỦ",
+      "title": "Trang Chủ",
       "href": "/",
-      "alt": "Home page"
+      "alt": "Trang Chủ"
     },
     {
-      "text": "About Me",
-      "title": "About me",
-      "href": "/about",
-      "alt": "About me"
-    },
-    {
-      "text": "Blog",
-      "title": "Blog page",
-      "href": "/blog",
-      "alt": "Blog page"
-    },
-    {
-      "text": "Admin",
-      "title": "Admin page",
-      "alt": "Admin page",
+      "text": "SẢN PHẨM",
+      "title": "Sản Phẩm",
+      "href": "/san-pham.html",
+      "alt": "Sản Phẩm",
       "subItems": [
         {
-          "text": "Posts",
-          "href": "/admin/post",
-          "alt": "Posts page"
+          "img": "/static/images/vinfast-vf3.jpg",
+          "product_name": "Vinfast VF3",
+          "alt": "Vinfast VF3",
+          "href": "/san-pham.html"
         },
         {
-          "text": "Users",
-          "href": "/admin/user",
-          "alt": "User page"
+          "img": "/static/images/vinfast-vf5.jpg",
+          "product_name": "Vinfast VF5",
+          "alt": "Vinfast VF5",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf6.jpg",
+          "product_name": "Vinfast VF6",
+          "alt": "Vinfast VF6",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf7.jpg",
+          "product_name": "Vinfast VF7",
+          "alt": "Vinfast VF7",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf8.jpg",
+          "product_name": "Vinfast VF8",
+          "alt": "Vinfast VF8",
+          "href": "/san-pham.html"
+        },
+        {
+          "img": "/static/images/vinfast-vf9.jpg",
+          "product_name": "Vinfast VF9",
+          "alt": "Vinfast VF9",
+          "href": "/san-pham.html"
         }
       ]
+    },
+    {
+      "text": "BẢNG GIÁ XE",
+      "title": "Bảng Giá Xe",
+      "href": "/bang-gia-xe.html",
+      "alt": "Bảng Giá Xe"
+    },
+    {
+      "text": "TRẢ GÓP",
+      "title": "Trả Góp",
+      "href": "/tra-gop.html",
+      "alt": "Trả Góp"
+    },
+    {
+      "text": "TIN TỨC",
+      "title": "Tin Tức",
+      "href": "/tin-tuc.html",
+      "alt": "Tin Tức"
+    },
+    {
+      "text": "LIÊN HỆ",
+      "title": "Liên Hệ",
+      "href": "/lien-he.html",
+      "alt": "Liên Hệ"
     }
-  ]
+  ],
+  "advisory": {
+    "img": "/static/images/advisory.jpg",
+    "alt": "logo website"
+  }
 }
