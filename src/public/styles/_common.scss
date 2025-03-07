@@ -80,6 +80,13 @@ input {
     //color: $color-text-body;
     outline: none;
   }
+
+  &[type="search"]::-webkit-search-decoration,
+  &[type="search"]::-webkit-search-cancel-button,
+  &[type="search"]::-webkit-search-results-button,
+  &[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
 }
 input,
 button,
@@ -214,6 +221,12 @@ h3 {
 .no-pointer {
   pointer-events: none;
   opacity: 0.6;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 .table-responsive {
   &::-webkit-scrollbar {

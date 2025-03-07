@@ -4,6 +4,7 @@
 $padding: 10px;
 $width-nav-desktop: 360px;
 $pr-icon-hamburger: 33px;
+$padding-aside: 15px;
 
 .fixed-header {
   position: relative;
@@ -59,15 +60,15 @@ $pr-icon-hamburger: 33px;
 }
 .hamburger-icon {
   position: fixed;
-  top: 9px;
+  top: 14px;
   left: 10px;
   z-index: variables.$z-index-hamburger;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   outline: 0;
   cursor: pointer;
   -webkit-tap-highlight-color: variables.$color-transparent;
@@ -75,7 +76,7 @@ $pr-icon-hamburger: 33px;
   span {
     display: block;
     height: 3px;
-    width: 30px;
+    width: 27px;
     background: variables.$color-black;
     position: relative;
     border-radius: 2px;
@@ -86,7 +87,7 @@ $pr-icon-hamburger: 33px;
       position: absolute;
       display: block;
       height: 3px;
-      width: 30px;
+      width: 27px;
       background: variables.$color-black;
       top: 10px;
       left: 0;
@@ -140,6 +141,34 @@ $pr-icon-hamburger: 33px;
   }
 }
 .navbar-menu {
+  &__box-search {
+    padding: 10px $padding-aside 20px;
+    position: relative;
+
+    input {
+      padding: 8px 30px 8px 15px;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    a {
+      position: absolute;
+      top: 11px;
+      right: 15px;
+      z-index: variables.$z-index-1;
+      display: flex;
+      width: 35px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    span {
+      font-size: 14px;
+      color: variables.$color-gray-600;
+    }
+  }
   @media #{variables.$media-sm-down} {
     position: fixed;
     z-index: variables.$z-index-navbar;
@@ -166,6 +195,10 @@ $pr-icon-hamburger: 33px;
       display: flex;
       align-items: center;
       height: 100%;
+    }
+
+    &__box-search {
+      display: none;
     }
   }
   &__item {
@@ -195,8 +228,8 @@ $pr-icon-hamburger: 33px;
     height: 100%;
     align-items: center;
     padding-top: 4px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $padding-aside;
+    padding-right: $padding-aside;
     border-bottom: 2px solid variables.$color-transparent;
 
     @media #{variables.$media-sm-up} {

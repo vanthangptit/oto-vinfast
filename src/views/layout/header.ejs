@@ -9,7 +9,12 @@
         <div class="hamburger-icon js-hamburger-icon"><span></span></div>
 
         <div class="navbar-menu js-navbar-menu">
-          <input type="search">
+          <div class="navbar-menu__box-search">
+            <input type="search">
+            <a class="js-search">
+              <span class="fa fa-search" aria-hidden="true"></span>
+            </a>
+          </div>
 
           <ul>
             <% for(var i = 0; i < data.menu.length; i++) { %>
