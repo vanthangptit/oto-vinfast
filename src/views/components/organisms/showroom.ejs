@@ -1,14 +1,14 @@
 <div class="showroom">
-    <div class="showroom__title">
-        <%- include('../molecules/section-title', { data: data.sectionTitle }); %>
-    </div>
-    <div class="showroom__text-icon">
-        <div class="row">
-            <% for(var i = 0; i < data.listButtons.length; i++) { %>
-                <div class="col">
-                    <%- include('../molecules/button-link-showroom', { data: data.listButtons[i] }); %>
-                </div>
-            <% } %>
+  <div class="showroom__title">
+    <%- include('../molecules/section-title', { data: data.sectionTitle }); %>
+  </div>
+  <div class="showroom__text-icon">
+    <div class="row">
+      <% for(var i = 0; i < data.listButtons.length; i++) { %>
+        <div class="col">
+          <%- include('../molecules/button-link-showroom', { data: data.listButtons[i] }); %>
         </div>
+      <% } %>
     </div>
+  </div>
 </div>
