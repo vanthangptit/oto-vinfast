@@ -6,14 +6,18 @@
 
   <main style="height: 10000px">
     <% if (data.masthead) { %>
-      <%- include('../components/molecules/masthead', { data: data.masthead }); %>
+      <section>
+        <%- include('../components/molecules/masthead', { data: data.masthead }); %>
+      </section>
     <% }%>
 
-    <div class="container" id="wrap">
-      <div class="row">
-        <%- data.contents %>
-      </div>
-    </div>
+    <% if (data.showroom) { %>
+      <section class="pb-25 pt-25 bg-showroom">
+        <div class="container">
+            <%- include('../components/organisms/showroom', { data: data.showroom }); %>
+        </div>
+      </section>
+    <% }%>
   </main>
 
   <%- include('../layout/footer', { data: footer }); %>

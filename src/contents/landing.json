@@ -37,5 +37,27 @@
       "href": "/"
     }
   ],
-  "contents": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p><br/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p><br/><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>"
+  "showroom": {
+    "sectionTitle": {
+      "title": "SHOWROOM VIỆT THẮNG",
+      "description": "CHÚNG TÔI LUÔN GIỮ VỮNG NHỮNG CAM KẾT VỚI QUÝ KHÁCH HÀNG"
+    },
+    "listButtons": [
+      {
+        "icon": "fa fa-usd",
+        "text": "Yêu cầu báo giá",
+        "href": "./yeu-cau-bao-gia.html"
+      },
+      {
+        "icon": "fa fa-calculator",
+        "text": "Thủ tục trả góp",
+        "href": "./thu-tuc-tra-gop.html"
+      },
+      {
+        "icon": "fa fa-car",
+        "text": "Bảng giá xe VinFast",
+        "href": "./bang-gia-xe.html"
+      }
+    ]
+  }
 }

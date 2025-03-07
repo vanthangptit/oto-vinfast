@@ -35,7 +35,8 @@ $backgrounds: (
   "secondary": #001c37,
   "tertiary": $body-color,
   "white": $color-white,
-  "black": $color-black
+  "black": $color-black,
+  "showroom": #dee2e6,
 );
 $text-bg: (
   "primary": $color-primary,
@@ -53,6 +54,7 @@ $text-colors: map.merge(
     )
 );
 
+$color-section-title: #111111;
 $color-transparent: rgba(255, 255, 255, 0);
 $border-bottom_menu: #1464f3;
 $box-shadow-fixed-header: #b1b1b1;
@@ -63,6 +65,7 @@ $color-social-link: #444444;
 $bg-footer-bottom:  #f1f1f1;
 $color-scrollbar:   #b3b3b3;
 $bg-backdrop-menu:  rgba(0, 29, 56, 0.7);
+$bg-button-showroom: #084ecb;
 
 // Gray
 $color-white: #fff !default;
