@@ -1,0 +1,27 @@
+@use "../variables";
+
+.masthead {
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: variables.$color-white;
+  }
+
+  @media #{variables.$media-md-up} {
+    &__image {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
