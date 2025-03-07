@@ -12,23 +12,31 @@
     <% }%>
 
     <% if (data.showroom) { %>
-      <section class="pb-25 pt-25 bg-gray">
+      <section class="pt-30 pb-30 bg-gray">
         <div class="container">
             <%- include('../components/organisms/showroom', { data: data.showroom }); %>
         </div>
       </section>
     <% }%>
     <% if (data.showroom) { %>
-      <section class="pb-20 pt-20">
+      <section class="pt-30 pb-30">
         <div class="container">
           <%- include('../components/organisms/product-types', { data: data.productTypes }); %>
         </div>
       </section>
     <% }%>
     <% if (data.advisory) { %>
-      <section class="pb-20 pt-20 bg-gray">
+      <section class="pt-50 pb-30 bg-gray">
         <div class="container">
           <%- include('../components/organisms/advisory', { data: data.advisory }); %>
+        </div>
+      </section>
+    <% }%>
+
+    <% if (data.productDiscount) { %>
+      <section class="pt-30 pb-30">
+        <div class="container">
+          <%- include('../components/organisms/product-discount', { data: data.productDiscount }); %>
         </div>
       </section>
     <% }%>

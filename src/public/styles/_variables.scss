@@ -20,7 +20,7 @@ $media-lg-up: '(min-width: #{$break-point-1200})';
 //color
 $color-primary: #333333;
 $color-secondary: #fefefe;
-$color-tertiary: #bc2e1d;
+$color-tertiary: #c8102e;
 $body-color: #212529;
 $theme-colors: (
   "primary": $color-primary,
@@ -68,6 +68,8 @@ $color-scrollbar:   #b3b3b3;
 $bg-backdrop-menu:  rgba(0, 29, 56, 0.7);
 $bg-button-showroom: #084ecb;
 $color-product-type: #df2537;
+$bg-discount-btn: #c4172c;
+$bg-discount-btn-icon: $border-bottom_menu;
 
 // Gray
 $color-white: #fff !default;
