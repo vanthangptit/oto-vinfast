@@ -18,6 +18,13 @@
         </div>
       </section>
     <% }%>
+    <% if (data.showroom) { %>
+      <section class="pb-20 pt-20">
+        <div class="container">
+          <%- include('../components/organisms/product-types', { data: data.productTypes }); %>
+        </div>
+      </section>
+    <% }%>
   </main>
 
   <%- include('../layout/footer', { data: footer }); %>
