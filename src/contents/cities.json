@@ -1,0 +1,257 @@
+{
+  "bgImage": "/static/images/test-drive-banner.jpg",
+  "cities": [
+    {
+      "value": -1,
+      "name": "--- Chọn Tỉnh / Thành Phố ---"
+    },
+    {
+      "value": 29,
+      "name": "Hà Nội"
+    },
+    {
+      "value": 51,
+      "name": "TP.HCM"
+    },
+    {
+      "value": 34,
+      "name": "Hải Dương"
+    },
+    {
+      "value": 15,
+      "name": "Hải Phòng"
+    },
+    {
+      "value": 11,
+      "name": "Cao Bằng"
+    },
+    {
+      "value": 12,
+      "name": "Lạng Sơn"
+    },
+    {
+      "value": 14,
+      "name": "Quảng Ninh"
+    },
+    {
+      "value": 17,
+      "name": "Thái Bình"
+    },
+    {
+      "value": 18,
+      "name": "Nam Định"
+    },
+    {
+      "value": 19,
+      "name": "Phú Thọ"
+    },
+    {
+      "value": 20,
+      "name": "Thái Nguyên"
+    },
+    {
+      "value": 21,
+      "name": "Yên Bái"
+    },
+    {
+      "value": 22,
+      "name": "Tuyên Quang"
+    },
+    {
+      "value": 23,
+      "name": "Hà Giang"
+    },
+    {
+      "value": 24,
+      "name": "Lào Cai"
+    },
+    {
+      "value": 25,
+      "name": "Lai Châu"
+    },
+    {
+      "value": 26,
+      "name": "Sơn La"
+    },
+    {
+      "value": 27,
+      "name": "Điện Biên"
+    },
+    {
+      "value": 28,
+      "name": "Hòa Bình"
+    },
+    {
+      "value": 35,
+      "name": "Ninh Bình"
+    },
+    {
+      "value": 36,
+      "name": "Thanh Hóa"
+    },
+    {
+      "value": 37,
+      "name": "Nghệ An"
+    },
+    {
+      "value": 38,
+      "name": "Hà Tĩnh"
+    },
+    {
+      "value": 43,
+      "name": "TP. Đà Nẵng"
+    },
+    {
+      "value": 47,
+      "name": "Đắk Lắk"
+    },
+    {
+      "value": 49,
+      "name": "Lâm Đồng"
+    },
+    {
+      "value": 60,
+      "name": "Đồng Nai"
+    },
+    {
+      "value": 61,
+      "name": "Bình Dương"
+    },
+    {
+      "value": 62,
+      "name": "Long An"
+    },
+    {
+      "value": 63,
+      "name": "Tiền Giang"
+    },
+    {
+      "value": 64,
+      "name": "Vĩnh Long"
+    },
+    {
+      "value": 65,
+      "name": "Cần Thơ"
+    },
+    {
+      "value": 66,
+      "name": "Đồng Tháp"
+    },
+    {
+      "value": 67,
+      "name": "An Giang"
+    },
+    {
+      "value": 68,
+      "name": "Kiên Giang"
+    },
+    {
+      "value": 69,
+      "name": "Cà Mau"
+    },
+    {
+      "value": 70,
+      "name": "Tây Ninh"
+    },
+    {
+      "value": 71,
+      "name": "Bến Tre"
+    },
+    {
+      "value": 72,
+      "name": "Bà Rịa - Vũng Tàu"
+    },
+    {
+      "value": 73,
+      "name": "Quảng Bình"
+    },
+    {
+      "value": 74,
+      "name": "Quảng Trị"
+    },
+    {
+      "value": 75,
+      "name": "Thừa Thiên Huế"
+    },
+    {
+      "value": 76,
+      "name": "Quảng Ngãi"
+    },
+    {
+      "value": 77,
+      "name": "Bình Định"
+    },
+    {
+      "value": 78,
+      "name": "Phú Yên"
+    },
+    {
+      "value": 79,
+      "name": "Khánh Hòa"
+    },
+    {
+      "value": 81,
+      "name": "Gia Lai"
+    },
+    {
+      "value": 82,
+      "name": "Kon Tum"
+    },
+    {
+      "value": 83,
+      "name": "Sóc Trăng"
+    },
+    {
+      "value": 84,
+      "name": "Trà Vinh"
+    },
+    {
+      "value": 85,
+      "name": "Ninh Thuận"
+    },
+    {
+      "value": 86,
+      "name": "Bình Thuận"
+    },
+    {
+      "value": 88,
+      "name": "Vĩnh Phúc"
+    },
+    {
+      "value": 89,
+      "name": "Hưng Yên"
+    },
+    {
+      "value": 90,
+      "name": "Hà Nam"
+    },
+    {
+      "value": 92,
+      "name": "Quảng Nam"
+    },
+    {
+      "value": 93,
+      "name": "Bình Phước"
+    },
+    {
+      "value": 94,
+      "name": "Bạc Liêu"
+    },
+    {
+      "value": 95,
+      "name": "Hậu Giang"
+    },
+    {
+      "value": 97,
+      "name": "Bắc Cạn"
+    },
+    {
+      "value": 98,
+      "name": "Bắc Giang"
+    },
+    {
+      "value": 99,
+      "name": "Bắc Ninh"
+    }
+  ]
+}

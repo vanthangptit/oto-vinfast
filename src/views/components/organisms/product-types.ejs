@@ -1,0 +1,14 @@
+<div class="product-types">
+  <div class="product-types__title">
+    <%- include('../molecules/section-title', { data: data.sectionTitle }); %>
+  </div>
+  <div class="product-types__list">
+    <div class="row">
+      <% for(var i = 0; i < data.listCars.length; i++) { %>
+        <div class="col-12 col-sm-6 col-md-4">
+          <%- include('../molecules/product-card', { data: data.listCars[i] }); %>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>

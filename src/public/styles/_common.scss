@@ -214,6 +214,23 @@ h3 {
     transform: translateY(0px);
   }
 }
+@keyframes bounceAlpha {
+  0%, 55% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateX(10px) scale(.9);
+    transform: translateX(10px) scale(.9);
+  }
+  26% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px) scale(.9);
+    transform: translateX(-10px) scale(.9);
+  }
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -230,6 +247,9 @@ h3 {
 .mb-20 {
   margin-bottom: 20px;
 }
+.mb-25 {
+  margin-bottom: 20px;
+}
 .pb-15 {
   padding-bottom: 15px;
 }
@@ -239,6 +259,15 @@ h3 {
 .pb-25 {
   padding-bottom: 25px;
 }
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-40 {
+  padding-bottom: 40px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
 .pt-15 {
   padding-top: 15px;
 }
@@ -247,6 +276,15 @@ h3 {
 }
 .pt-25 {
   padding-top: 25px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-50 {
+  padding-top: 50px;
 }
 .table-responsive {
   &::-webkit-scrollbar {

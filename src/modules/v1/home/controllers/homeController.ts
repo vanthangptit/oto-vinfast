@@ -14,8 +14,9 @@ export const homeController = async (
     const data = getEntity('landing');
     const header = getEntity('header');
     const footer = getEntity('footer');
+    const cities = getEntity('cities');
 
-    return res.render('home', { data: { ...data }, header, footer });
+    return res.render('home', { data: { ...data, ...cities }, header, footer });
   } catch (e: any) {
     return next(appError(e.message));
   }

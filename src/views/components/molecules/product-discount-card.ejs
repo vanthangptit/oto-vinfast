@@ -1,0 +1,19 @@
+<div class="product-discount-card">
+  <a href="<%= data.href %>">
+    <img src="<%= data.image %>" alt="<%= data.name %>">
+  </a>
+  <div class="product-discount-card__text-box">
+    <h3>
+      <a href="<%= data.href %>" alt="<%= data.name %>"><%= data.name %></a>
+    </h3>
+    <p>
+      <strong><%= data.price %></strong>
+    </p>
+  </div>
+  <div class="product-discount-card__button">
+    <a type="button" class="cursor-pointer">
+      <span> Nhận khuyến mãi</span>
+      <i class="fa fa-gift" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
