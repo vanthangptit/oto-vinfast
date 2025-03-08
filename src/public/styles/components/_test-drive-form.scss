@@ -1,0 +1,57 @@
+@use "../variables";
+
+.test-drive-form {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 60px 0;
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__column {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media #{variables.$media-sm-up} {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  .custom-select {
+    color: variables.$color-select-box;
+  }
+
+  button.btn {
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 30px;
+
+    span {
+      display: inline-block;
+      padding-left: 8px;
+    }
+  }
+
+  .notice {
+    color: variables.$color-white;
+    text-align: left;
+  }
+}
+
+.bounce-alpha {
+  -webkit-animation-name: bounceAlpha;
+  animation-name: bounceAlpha;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}

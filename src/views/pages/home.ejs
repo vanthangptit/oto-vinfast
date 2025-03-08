@@ -4,7 +4,7 @@
 <body>
   <%- include('../layout/header', { data: header }); %>
 
-  <main style="height: 10000px">
+  <main>
     <% if (data.masthead) { %>
       <section>
         <%- include('../components/molecules/masthead', { data: data.masthead }); %>
@@ -40,6 +40,9 @@
         </div>
       </section>
     <% }%>
+    <section class="pt-30 pb-30">
+      <%- include('../components/organisms/test-drive-form', { data: data }); %>
+    </section>
   </main>
 
   <%- include('../layout/footer', { data: footer }); %>

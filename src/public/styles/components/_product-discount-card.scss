@@ -34,4 +34,18 @@
       color: variables.$color-white;
     }
   }
+
+  @media #{variables.$media-xs-down} {
+    margin-bottom: 25px;
+
+    & > a {
+      display: flex;
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
 }

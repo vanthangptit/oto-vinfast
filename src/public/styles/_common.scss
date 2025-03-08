@@ -214,6 +214,23 @@ h3 {
     transform: translateY(0px);
   }
 }
+@keyframes bounceAlpha {
+  0%, 55% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateX(10px) scale(.9);
+    transform: translateX(10px) scale(.9);
+  }
+  26% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px) scale(.9);
+    transform: translateX(-10px) scale(.9);
+  }
+}
 .cursor-pointer {
   cursor: pointer;
 }

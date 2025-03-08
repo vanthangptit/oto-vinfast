@@ -1,0 +1,42 @@
+<div class="test-drive-form" style="background-image: url('<%= data.bgImage %>')">
+  <div class="container">
+    <div class="test-drive-form__row">
+      <div class="test-drive-form__column">
+        <form action="">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <input type="text" class="form-control" name="name" placeholder="Họ tên (Bắt buộc)...">
+            </div>
+            <div class="col-6 mb-3">
+              <input type="text" class="form-control" name="phone" placeholder="Điện thoại (Bắt buộc)...">
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Email...">
+          </div>
+          <div class="mb-3">
+            <select class="form-select custom-select">
+              <% for(var i = 0; i < data.cities.length; i++) { %>
+              <option  <% if(data.cities[i].value === -1) { %>selected<% }%> value="<%= data.cities[i].value %>"><%= data.cities[i].name %></option>
+              <% } %>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" name="car_type" placeholder="Nhập dòng xe lái thử (Bắt buộc)...">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Ngày bắt đi đầu thử">
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa fa-angle-double-right bounce-alpha" aria-hidden="true"></i>
+              <span>Đăng ký ngay</span>
+            </button>
+          </div>
+        </form>
+        <p class="notice">Chú ý: Để tham gia đăng ký lái thử với chúng tôi, Quý khách cần có giấy phép lái xe hạng B1 trở lên.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
