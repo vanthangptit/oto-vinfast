@@ -1,0 +1,38 @@
+.product-team {
+  a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 52px;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 15px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 48%;
+      left: 5px;
+      width: 35px;
+      height: 35px;
+      margin-top: -15px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &.btn-seller::before {
+      background-image: url('/static/images/teams/icon-saller.png');
+
+    }
+    &.btn-request::before {
+      background-image: url('/static/images/teams/icon-usd.png');
+    }
+    &.btn-test-driver::before {
+      background-image: url('/static/images/teams/icon-test-driver.png');
+    }
+    &.btn-calculator::before {
+      background-image: url('/static/images/teams/icon-calculator.png');
+    }
+  }
+}

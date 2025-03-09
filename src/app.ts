@@ -11,6 +11,7 @@ import { globalErrHandler, middlewareCors } from './middlewares';
 import conf from './config';
 import homeRouter from "./modules/v1/home/routes/homeRoutes";
 import productRouter from "./modules/v1/product/routes/productRoutes";
+import productDetailRouter from "./modules/v1/product-detail/routes/productDetailRoutes";
 
 const app: Application = express();
 const { port } = conf;
@@ -33,6 +34,7 @@ const init = async () => {
   // Route Pages
   app.use('/', homeRouter);
   app.use('/san-pham.html', productRouter);
+  app.use('/san-pham/detail.html', productDetailRouter);
 
   // Static files
   app.use('/static', express.static(__dirname + '/../dist'));

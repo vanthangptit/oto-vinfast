@@ -1,0 +1,25 @@
+@use "../variables";
+
+.social {
+  gap: 10px;
+
+  a {
+    display: inline-block;
+    color: variables.$color-white;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .facebook {
+    background-color: #3d5a98;
+  }
+
+  .twitter {
+    background-color: #00aced;
+  }
+
+  .linkedin {
+    background-color: #0077b5;
+  }
+}

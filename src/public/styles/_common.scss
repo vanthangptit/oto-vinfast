@@ -112,9 +112,6 @@ img {
 }
 p { margin-bottom: 1rem; }
 
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../../../node_modules/swiper/swiper-bundle.min.css';
-
 [class^="fa-"], [class*=" fa-"] {
   speak: never;
   font-style: normal;
@@ -295,6 +292,38 @@ h3 {
 .pt-50 {
   padding-top: 50px;
 }
+.flex {
+  display: flex;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.bottom-line {
+  padding-bottom: 5px;
+  border-bottom: 1px solid variables.$color-gray-200;
+}
+.btn-request {
+  background-color: variables.$bg-btn-request;
+  color: variables.$color-white;
+
+  &:active,
+  &:hover {
+    background-color: variables.$bg-btn-request-hover;
+    color: variables.$color-white;
+  }
+}
+.heading-detail {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: normal;
+  padding: 2px 0 2px 10px;
+  margin-bottom: 1rem;
+  border-left: 4px solid variables.$bg-discount-btn-icon;
+}
+.gap-25 {
+  gap: 25px;
+}
 .table-responsive {
   &::-webkit-scrollbar {
     width: 1px;
@@ -318,4 +347,7 @@ h3 {
   @media #{variables.$media-md-down} {
     margin-bottom: 10px;
   }
+}
+.fa-star {
+  color: variables.$color-star;
 }

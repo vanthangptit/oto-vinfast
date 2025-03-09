@@ -1,0 +1,27 @@
+@use "../variables";
+
+.product-detail {
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__price-value {
+    color: variables.$bg-discount-btn;
+  }
+
+  &__description {
+    padding: 10px;
+    margin: 10px auto;
+    border: 3px dotted variables.$color-product-type;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
+
+.title-box {
+  h2 {
+    font-weight: 400;
+  }
+}

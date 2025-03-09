@@ -1,3 +1,4 @@
+@use './vendor';
 @use './common';
 
 //components
@@ -13,6 +14,12 @@
 @use 'components/product-discount-card';
 @use 'components/test-drive-form';
 @use 'components/breadcrumb';
+@use 'components/swiper-thumbs-zoom';
+@use 'components/social';
+@use 'components/product-team';
+@use 'components/tab-detail';
+@use 'components/form-detail';
 
 //page
 @use 'pages/product';
+@use 'pages/product-detail';

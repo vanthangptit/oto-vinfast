@@ -1,0 +1,18 @@
+@use "../variables";
+
+.swiper-thumbs-zoom {
+  width: 100%;
+  overflow: hidden;
+
+  .swiper-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .swiper-slide {
+    &.swiper-slide-thumb-active {
+      border: 5px solid variables.$border-bottom_menu;
+    }
+  }
+}

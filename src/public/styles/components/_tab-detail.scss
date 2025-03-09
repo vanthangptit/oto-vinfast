@@ -1,0 +1,27 @@
+@use "../variables";
+
+.tab-detail {
+  &__header {
+    background-color: variables.$bg-button-showroom;
+  }
+
+  &__buttons {
+    display: flex;
+
+    a {
+      display: inline-block;
+      padding: 15px 0;
+      color: variables.$color-white;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:hover {
+        color: variables.$color-white;
+      }
+    }
+  }
+
+  &__content {
+    font-size: 14px;
+  }
+}

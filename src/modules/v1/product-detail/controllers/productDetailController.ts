@@ -5,7 +5,7 @@ import {appError, getEntity} from '../../../../utils';
 /**
  * Create comment
  */
-export const productController = async (
+export const productDetailController = async (
   req: Request,
   res: Response,
   next: NextFunction
@@ -14,8 +14,9 @@ export const productController = async (
     const data = getEntity('production');
     const header = getEntity('header');
     const footer = getEntity('footer');
+    const cities = getEntity('cities');
 
-    return res.render('product', { data: { ...data }, header, footer });
+    return res.render('product-detail', { data: { ...data, ...cities }, header, footer });
   } catch (e: any) {
     return next(appError(e.message));
   }
