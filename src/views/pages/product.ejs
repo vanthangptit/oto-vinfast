@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <%- include('../layout/head'); %>
+  <body>
+  <%- include('../layout/header', { data: header }); %>
+
+  <main>
+    <section aria-label="breadcrumb-box">
+      <div class="breadcrumb-box">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item active" style="opacity: 0.7;" aria-current="page">Sản phẩm</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="product" aria-label="content page">
+      <div class="container">
+        <h1 class="product__title">Sản phẩm</h1>
+
+        <div class="row">
+          <% for(var j = 0; j < data.products.length; j++) { %>
+          <div class="col-12 col-sm-6 col-md-4">
+            <%- include('../components/molecules/product-discount-card', { data: data.products[j] }); %>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include('../layout/footer', { data: footer }); %>
+  <%- include('../layout/scripts'); %>
+  </body>
+</html>

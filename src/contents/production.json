@@ -1,0 +1,65 @@
+{
+  "titlePage": "Sản phẩm",
+  "products": [
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf3-2024.jpg",
+      "name": "VinFast VF3 2025",
+      "price": "299,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf5-plus.jpg",
+      "name": "VinFast VF3 2025",
+      "price": "529,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf6-eco.jpg",
+      "name": "VinFast VF6 Eco",
+      "price": "689,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf6-plus.jpg",
+      "name": "VinFast VF6 Plus",
+      "price": "749,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf7-eco.jpg",
+      "name": "VinFast VF7 Eco",
+      "price": "799,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf7-plus.jpg",
+      "name": "VinFast VF7 Plus",
+      "price": "949,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf8-eco.jpg",
+      "name": "VinFast VF8 Eco",
+      "price": "1,019,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf8-plus.jpg",
+      "name": "VinFast VF8 Plus",
+      "price": "1,199,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf9-eco.jpg",
+      "name": "VinFast VF9 Eco",
+      "price": "1,499,000,000 VND"
+    },
+    {
+      "href": "/",
+      "image": "/static/images/products/discount/vinfast-vf9-plus.jpg",
+      "name": "VinFast VF9 Plus",
+      "price": "1,699,000,000 VND"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+@use "../variables";
+
+.breadcrumb-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  list-style: none;
+  background-color: variables.$border-bottom_menu;
+
+  .breadcrumb {
+    margin: 0;
+
+    .breadcrumb-item {
+      color: variables.$color-white;
+      font-weight: 600;
+
+      &::before, &::after {
+        color: variables.$color-white;
+      }
+
+      a {
+        color: variables.$color-white;
+      }
+    }
+  }
+
+
+}

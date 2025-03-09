@@ -10,6 +10,7 @@ import { globalErrHandler, middlewareCors } from './middlewares';
 
 import conf from './config';
 import homeRouter from "./modules/v1/home/routes/homeRoutes";
+import productRouter from "./modules/v1/product/routes/productRoutes";
 
 const app: Application = express();
 const { port } = conf;
@@ -31,6 +32,7 @@ const init = async () => {
 
   // Route Pages
   app.use('/', homeRouter);
+  app.use('/san-pham.html', productRouter);
 
   // Static files
   app.use('/static', express.static(__dirname + '/../dist'));
