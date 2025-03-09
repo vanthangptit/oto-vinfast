@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <%- include('../layout/head'); %>
+  <body>
+  <%- include('../layout/header', { data: header }); %>
+
+  <main class="price-list">
+    <section aria-label="breadcrumb-box">
+      <div class="breadcrumb-box">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item active" style="opacity: 0.7;" aria-current="page">Bảng Giá Xe VinFast Mới Nhất tại Viet Thang</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="price-list__title">
+          <h1>Bảng Giá Xe VinFast Mới Nhất tại Viet Thang</h1>
+        </div>
+
+        <h2 style="color:#FF0000;font-size:24px;font-weight:700;text-align:center;margin-bottom:30px;">
+          <img src="/static/images/hot.gif" style="width:36px;">
+          <span>Liên hệ 0984.619.295 để có giá tốt nhất!</span>
+          <img src="/static/images/hot.gif" style="width:36px;">
+        </h2>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="price-list-banner">
+          <h2>
+            Chương trình ưu đãi Cực Khủng - <span>Nhận quà tặng Hấp Dẫn</span>
+          </h2>
+          <h5 class="mb-20">
+            <span>Vui lòng liên hệ Hotline 0984.619.295 để được tư vấn tốt nhất!</span>
+          </h5>
+          <div class="row">
+            <div class="col-md-6">
+              <ol class="price-list-banner__left">
+                <li>Click ngay để xem chi tiết: <a href="#gia_xe_vf3">Giá xe VinFast VF3</a></li>
+                <li>Click ngay để xem chi tiết: <a href="#gia_xe_vf5">Giá xe VinFast VF5</a></li>
+                <li>Click ngay để xem chi tiết: <a href="#gia_xe_vf6">Giá xe VinFast VF6</a></li>
+                <li>Click ngay để xem chi tiết: <a href="#gia_xe_vf7">Giá xe VinFast VF7</a></li>
+                <li>Click ngay để xem chi tiết: <a href="#gia_xe_vf8">Giá xe VinFast VF8</a></li>
+                <li>Click ngay để xem chi tiết: <a href="#gia_xe_vf9">Giá xe VinFast VF9</a></li>
+              </ol>
+            </div>
+
+            <div class="col-md-6">
+              <div class="price-list-banner__right">
+                <p>
+                  <img alt="VinFast VF8" src="https://cdn.gianhangvn.com/image/vinfast-vf8-98yirhq.png">
+                </p>
+                <div class="price-list-banner__buttons">
+                  <a class="btn" href="tel:0984619295" title="Đặt xe ngay">Hotline 0984.619.295</a>
+                  <a class="btn" href="javascript:OpenModelBaoGiaPopup()" title="Báo giá ngay">BÁO GIÁ NGAY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <article class="container">
+        <div class="row" id="gia_xe_vf3">
+          <div class="col-sm-4">
+            <h3 class="text-center text-20">VINFAST VF3</h3>
+            <img alt="VinFast VF3" src="https://cdn.gianhangvn.com/image/vinfast-vf3-bi0bv4h.png">
+          </div>
+
+          <div class="col-sm-8">
+            <table class="table-price">
+              <tbody>
+              <tr class="bg-gray">
+                <td class="text-center"><strong>MẪU XE</strong></td>
+                <td class="text-center"><strong>GIÁ BÁN</strong></td>
+              </tr>
+              <tr>
+                <td>VinFast VF3 2025</td>
+                <td class="text-center"><span class="text-red weight-bold">299.000.000</span></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <blockquote class="mb-20">
+          <p>Giá trên là giá công bố của Hãng. Để được mua xe <span class="weight-bold text-orange">VinFast VF3 giá tốt nhất + Khuyến Mãi nhiều nhất</span> hãy gọi cho ngay cho Phòng BH: <strong class="text-blue">0984.619.295</strong></p>
+        </blockquote>
+      </article>
+    </section>
+  </main>
+
+  <%- include('../layout/footer', { data: footer }); %>
+  <%- include('../layout/scripts'); %>
+  </body>
+</html>

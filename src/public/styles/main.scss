@@ -19,7 +19,10 @@
 @use 'components/product-team';
 @use 'components/tab-detail';
 @use 'components/form-detail';
+@use 'components/price-list-banner';
+@use 'components/table-price';
 
 //page
 @use 'pages/product';
 @use 'pages/product-detail';
+@use 'pages/price-list';

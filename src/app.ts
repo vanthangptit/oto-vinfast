@@ -12,6 +12,7 @@ import conf from './config';
 import homeRouter from "./modules/v1/home/routes/homeRoutes";
 import productRouter from "./modules/v1/product/routes/productRoutes";
 import productDetailRouter from "./modules/v1/product-detail/routes/productDetailRoutes";
+import priceListRouter from "./modules/v1/price-list/routes/priceListRoutes";
 
 const app: Application = express();
 const { port } = conf;
@@ -35,6 +36,7 @@ const init = async () => {
   app.use('/', homeRouter);
   app.use('/san-pham.html', productRouter);
   app.use('/san-pham/detail.html', productDetailRouter);
+  app.use('/bang-gia-xe-vinfast.html', priceListRouter);
 
   // Static files
   app.use('/static', express.static(__dirname + '/../dist'));
