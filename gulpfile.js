@@ -14,6 +14,7 @@ const paths = {
   images : [ 'src/public/images/**/*.*' ],
   scripts : [ 'src/public/scripts/**/*.js' ],
   vendors: {
+    base: [ 'node_modules/jquery/dist/jquery.min.js' ],
     scripts: [
       'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       'node_modules/swiper/swiper-bundle.min.js',
@@ -54,6 +55,11 @@ function scripts () {
     .pipe(gulp.dest(dest.scripts));
 }
 
+function baseScripts () {
+  return gulp.src(paths.vendors.base)
+    .pipe(gulp.dest(dest.libs));
+}
+
 function vendorScripts() {
   return gulp.src(paths.vendors.scripts)
     .pipe(concat('vendors.min.js'))
@@ -72,6 +78,6 @@ function watch () {
   gulp.watch(paths.scripts, { usePolling: true }, scripts);
 }
 
-gulp.task('build', gulp.series(cleanFolder, gulp.parallel(styles, images, fonts, scripts, vendorScripts )));
+gulp.task('build', gulp.series(cleanFolder, gulp.parallel(styles, images, fonts, scripts, baseScripts, vendorScripts )));
 gulp.task('dev', gulp.series('build', watch));
 gulp.task('default', gulp.series('build'));

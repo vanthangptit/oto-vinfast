@@ -1,6 +1,24 @@
 @use "../variables";
 
 .form-detail {
+  .form-detail-sticker {
+    width: inherit;
+
+    &.is-fixed {
+      position: fixed;
+      z-index: variables.$z-index-header;
+    }
+  }
+
+  &__header {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
   &__hotline {
     text-align: center;
     background-color: variables.$color-gray-900;

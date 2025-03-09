@@ -76,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('resize', function(e) {
     handleHideNavigation();
+    const navContainHeight = fixedHeaderElement.offsetHeight;
+    header.style.height = `${navContainHeight}px`;
   });
 
   scrollHandler();
