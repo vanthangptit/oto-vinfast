@@ -1,68 +1,101 @@
 {
-  "footerTop": {
-    "left": {
-      "title": "TNV Blog",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
-      "social": [
+  "title": "Quý khách cần tìm thêm thông tin",
+  "testDrive": [
+    {
+      "name": "Đăng ký lái thử",
+      "href": "/"
+    },
+    {
+      "name": "Bảng giá xe VinFast",
+      "href": "/bang-gia-xe-512514n.html"
+    },
+    {
+      "name": "Tin khuyến mãi",
+      "href": "/tin-tuc-512516t.html"
+    }
+  ],
+  "info": [
+    {
+      "title": "VINFAST SMART CITY",
+      "items": [
         {
-          "href": "#",
-          "icon": "fa-facebook"
+          "icon": "fa fa-map-marker",
+          "text": "Showroom: Tầng 1, Vincom Mega Mall Smart City Tây Mỗ, Quận Nam Từ Liêm, Hà Nội"
         },
         {
-
-          "href": "#",
-          "icon": "fa-twitter"
+          "icon": "fa fa-phone",
+          "title": "Gọi ngay",
+          "href": "tel:0984619295",
+          "text": "Hotline: 0984.619.295",
+          "style": "font-weight:bold"
         },
         {
-          "href": "#",
-          "icon": "fa-google-plus"
+          "icon": "fa fa-envelope",
+          "title": "Email thang.dev.ptit@gmail.com",
+          "href": "mailto:thang.dev.ptit@gmail.com",
+          "text": "Email: nbchien1106@gmail.com"
         },
         {
-          "href": "#",
-          "icon": "fa-pinterest"
+          "icon": "fa fa-paper-plane",
+          "title": "Website: https://vinfastauto3s.com.vn",
+          "href": "https://vinfastauto3s.com.vn",
+          "text": "Website: https://vinfastauto3s.com.vn"
         }
       ]
     },
-    "middle": {
-      "title": "Information",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "info": ["<span>Tel: </span><a href='tel:123 456 789'>+123 456 789</a>", "<span>Email:</span> contact@example.com", "<span>Working Hours: </span>9am-5pm" ]
-    },
-    "right": {
-      "title": "INSTAGRAM",
-      "instagram": [
+    {
+      "title": "Thời gian làm việc",
+      "items": [
         {
-          "href": "#",
-          "image": "/static/images/instagram/1.jpg",
-          "alt": "Instagram"
-        },
-        {
-          "href": "#",
-          "image": "/static/images/instagram/2.jpg",
-          "alt": "Instagram"
-        },
-        {
-          "href": "#",
-          "image": "/static/images/instagram/3.jpg",
-          "alt": "Instagram"
-        },
-        {
-          "href": "#",
-          "image": "/static/images/instagram/4.jpg",
-          "alt": "Instagram"
-        },
-        {
-          "href": "#",
-          "image": "/static/images/instagram/5.jpg",
-          "alt": "Instagram"
-        },
-        {
-          "href": "#",
-          "image": "/static/images/instagram/6.jpg",
-          "alt": "Instagram"
+          "icon": "fa fa-clock-o",
+          "text": "Thứ 2 - Chủ Nhật Từ 8h00 - 20h00"
         }
       ]
     }
+  ],
+  "carTypes": [
+    {
+      "title": "Các dòng xe VinFast",
+      "items": [
+        {
+          "icon": "fa fa-angle-right",
+          "href": "/vinfast-vf3-515337s.html",
+          "text": "VinFast VF3"
+        },
+        {
+          "icon": "fa fa-angle-right",
+          "href": "/vinfast-vf5-515338s.html",
+          "text": "VinFast VF5"
+        },
+        {
+          "icon": "fa fa-angle-right",
+          "href": "/vinfast-vf6-515339s.html",
+          "text": "VinFast VF6"
+        },
+        {
+          "icon": "fa fa-angle-right",
+          "href": "/vinfast-vf7-515339s.html",
+          "text": "VinFast VF7"
+        },
+        {
+          "icon": "fa fa-angle-right",
+          "href": "/vinfast-vf8-515342s.html",
+          "text": "VinFast VF8"
+        },
+        {
+          "icon": "fa fa-angle-right",
+          "href": "/vinfast-vf9-515343s.html",
+          "text": "VinFast VF9"
+        }
+      ]
+    }
+  ],
+  "map": {
+    "title": "Bản đồ",
+    "src": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3724.664416245571!2d105.75542999999999!3d21.006084999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDAwJzIxLjkiTiAxMDXCsDQ1JzE5LjYiRQ!5e0!3m2!1svi!2s!4v1718870477046!5m2!1svi!2s"
   },
-  "footerBottom": "© Copyright <span>NVTDesign</span>. All Rights Reserved"
+  "copyright": {
+    "title": "Copyright© 2025",
+    "logo": "/static/images/favicon.png"
+  }
 }

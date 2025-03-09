@@ -1,48 +1,94 @@
-<footer class="footer">
-  <section class="footer-top">
-    <div class="container">
+<footer class="footer bg-gray">
+  <div class="container">
+    <article class="pb-15">
+      <div class="footer__title">
+        <span class="bg-gray"><%= data.title %></span>
+        <hr/>
+      </div>
       <div class="row">
-        <div class="col-md-4 col-xs-6">
-          <h2 class="footer-top__logo-title"><%= data.footerTop.left.title %></h2>
-          <p class="footer-top__text"><%= data.footerTop.left.description %></p>
-
-          <div class="footer-top__social">
-            <% for(var i = 0; i < data.footerTop.left.social.length; i++) { %>
-              <a href="<%= data.footerTop.left.social[i].href %>" class="footer-top__social-link">
-                <span class="fa <%= data.footerTop.left.social[i].icon %>"></span>
+        <% for(var j = 0; j < data.testDrive.length; j++) { %>
+          <div class="col-md-4 col-lg-4">
+            <div class="footer__buttons">
+              <a class="footer__link" href="<%= data.testDrive[j].href %>" title="<%= data.testDrive[j].name %>">
+                <span><%= data.testDrive[j].name %></span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
-            <% } %>
+            </div>
           </div>
+        <% } %>
+      </div>
+      <hr/>
+    </article>
+    <article class="pb-50">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <% for(var i = 0; i < data.info.length; i++) { %>
+            <div class="pb-15">
+              <h4 class="footer__section-title is-underline"><%= data.info[i].title %></h4>
+              <% for(var k = 0; k < data.info[i].items.length; k++) { %>
+                <% if(data.info[i].items[k].href) { %>
+                <div class="mb-8">
+                  <i class="<%= data.info[i].items[k].icon %>" style="font-weight: bold;"></i>
+                  <a
+                    class="text-14"
+                    href="<%= data.info[i].items[k].href %>"
+                    style="<%= data.info[i].items[k].style %>"
+                    title="<%= data.info[i].items[k].title %>"
+                  >
+                    <%= data.info[i].items[k].text %>
+                  </a>
+                </div>
+                <% } else { %>
+                <div class="mb-8">
+                  <i class="<%= data.info[i].items[k].icon  %>" style="font-weight: bold;"></i>
+                  <span class="text-14"><%= data.info[i].items[k].text %></span>
+                </div>
+                <% } %>
+              <% } %>
+            </div>
+          <% } %>
         </div>
 
-        <div class="col-md-4 col-xs-6">
-          <h4 class="footer-top__title"><%= data.footerTop.middle.title %></h4>
-          <p class="footer-top__text"><%= data.footerTop.middle.description %></p>
-          <div class="footer-top__info">
-            <% for(var i = 0; i < data.footerTop.middle.info.length; i++) { %>
-              <p><%- data.footerTop.middle.info[i] %></p>
-            <% } %>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-xs-6">
-          <h4 class="footer-top__title"><%= data.footerTop.right.title %></h4>
-
-          <div class="footer-top__instagram">
-            <% for(var i = 0; i < data.footerTop.right.instagram.length; i++) { %>
-              <div class="footer-top__instagram-columns">
-                <a href="<%= data.footerTop.right.instagram[i].href %>" class="footer-top__instagram-link">
-                  <img src="<%= data.footerTop.right.instagram[i].image %>" alt="<%= data.footerTop.right.instagram[i].alt %>">
-                </a>
-              </div>
-            <% } %>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <% for(var i = 0; i < data.carTypes.length; i++) { %>
+                <div class="pb-15">
+                  <h4 class="footer__section-title is-underline"><%= data.carTypes[i].title %></h4>
+                  <% for(var k = 0; k < data.carTypes[i].items.length; k++) { %>
+                    <div class="mb-8">
+                      <i class="<%= data.carTypes[i].items[k].icon %>" style="font-weight: bold;"></i>
+                      <a
+                        class="text-14"
+                        href="<%= data.carTypes[i].items[k].href %>"
+                        title="<%= data.carTypes[i].items[k].text %>"
+                      >
+                        <%= data.carTypes[i].items[k].text %>
+                      </a>
+                    </div>
+                  <% } %>
+                </div>
+              <% } %>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h4 class="footer__section-title is-underline"><%= data.map.title %></h4>
+              <section class="google-map" style="height:250px;">
+                <iframe allowfullscreen="" height="250" width="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="<%= data.map.src %>" style="border:0;"></iframe>
+              </section>
+            </div>
           </div>
         </div>
       </div>
+    </article>
+  </div>
+  <article class="copyright bg-white mt-">
+    <div class="container">
+      <div class="copyright__info">
+        <div class="copyright__logo">
+          <img class=" ls-is-cached lazyloaded" alt="Logo" src="<%= data.copyright.logo %>">
+        </div>
+        <span><%= data.copyright.title %></span>
+      </div>
     </div>
-  </section>
-
-  <section class="footer-bottom">
-    <p class="footer-bottom__no-copy-right"><%- data.footerBottom %></p>
-  </section>
+  </article>
 </footer>

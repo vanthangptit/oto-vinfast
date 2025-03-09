@@ -15,8 +15,11 @@
   &__column {
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: variables.$bg-notice;
 
-    @media #{variables.$media-sm-up} {
+    @media #{variables.$media-md-up} {
       flex: 0 0 50%;
       max-width: 50%;
     }
@@ -42,6 +45,7 @@
   .notice {
     color: variables.$color-white;
     text-align: left;
+    font-size: 20px;
   }
 }
 
