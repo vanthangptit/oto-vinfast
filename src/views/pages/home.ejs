@@ -18,13 +18,15 @@
         </div>
       </section>
     <% }%>
-    <% if (data.showroom) { %>
+
+    <% if (data.productTypes) { %>
       <section class="pt-30 pb-30">
         <div class="container">
-          <%- include('../components/organisms/product-types', { data: data.productTypes }); %>
+          <%- include('../components/organisms/product-types', { data: { listCars: data.productTypes, sectionTitle: { title: "Các dòng xe VinFast" } } }); %>
         </div>
       </section>
     <% }%>
+
     <% if (data.advisory) { %>
       <section class="pt-50 pb-30 bg-gray">
         <div class="container">
@@ -41,7 +43,7 @@
       </section>
     <% }%>
     <section class="pt-30">
-      <%- include('../components/organisms/test-drive-form', { data: data }); %>
+      <%- include('../components/organisms/test-drive-form', { data: { cities: data.cities } }); %>
     </section>
   </main>
 

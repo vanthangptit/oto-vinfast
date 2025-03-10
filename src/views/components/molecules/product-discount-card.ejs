@@ -1,13 +1,13 @@
 <div class="product-discount-card">
-  <a href="<%= data.href %>">
-    <img src="<%= data.image %>" alt="<%= data.name %>">
+  <a href="/san-pham/<%= data.shortUrl %>.html">
+    <img src="<%= data.banner %>" alt="<%= data.name %>">
   </a>
   <div class="product-discount-card__text-box">
     <h3>
-      <a href="<%= data.href %>" alt="<%= data.name %>"><%= data.name %></a>
+      <a href="/san-pham/<%= data.shortUrl %>.html"><%= data.name %></a>
     </h3>
     <p>
-      <strong><%= data.price %></strong>
+      <strong><%= data.price %> <%= data.currency %></strong>
     </p>
   </div>
   <div class="product-discount-card__button">

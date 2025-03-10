@@ -43,7 +43,7 @@
     "@types/cors": "^2.8.15",
     "@types/express": "^4.17.18",
     "@types/jsonwebtoken": "^9.0.4",
-    "@types/node": "^20.8.4",
+    "@types/node": "^20.17.24",
     "del": "^8.0.0",
     "dotenv": "^16.3.1",
     "gulp": "^4.0.0",

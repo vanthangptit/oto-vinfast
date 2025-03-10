@@ -1,0 +1,73 @@
+{
+  "titlePage": "Trang chủ",
+  "masthead": [
+    {
+      "image": "/static/images/banner/vinfast-vf3-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf5-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf6-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-e34-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf8-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf7-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    },
+    {
+      "image": "/static/images/banner/vinfast-vf9-banner.jpg",
+      "alt": "vinfast vf3",
+      "href": "/"
+    }
+  ],
+  "showroom": {
+    "sectionTitle": {
+      "title": "SHOWROOM VIỆT THẮNG",
+      "description": "CHÚNG TÔI LUÔN GIỮ VỮNG NHỮNG CAM KẾT VỚI QUÝ KHÁCH HÀNG"
+    },
+    "listButtons": [
+      {
+        "icon": "fa fa-usd",
+        "text": "Yêu cầu báo giá",
+        "href": "./yeu-cau-bao-gia.html"
+      },
+      {
+        "icon": "fa fa-calculator",
+        "text": "Thủ tục trả góp",
+        "href": "./thu-tuc-tra-gop.html"
+      },
+      {
+        "icon": "fa fa-car",
+        "text": "Bảng giá xe VinFast",
+        "href": "./bang-gia-xe.html"
+      }
+    ]
+  },
+  "advisory": {
+    "right": {
+      "image": "/static/images/banner/vinfast-vf3-banner.jpg",
+      "name": "PHÒNG KINH DOANH VINFAST SMART CITY",
+      "numberCall": "Gọi ngay: 0984619295"
+    },
+    "left": {
+      "description": "<p style=\"text-align:left;font-weight:bold;font-size:24px;\">LIÊN HỆ NGAY ĐỂ ĐƯỢC TƯ VẤN</p><p style=\"margin-bottom:10px\">☺ Phụ trách Kinh Doanh: Mr.Chiến</p><p style=\"margin-bottom:15px;font-weight:bold;\">☎ Hotline + Zalo: 0984619295</p><hr><p style=\"font-weight:bold;margin-bottom:8px;\">✪ GIÁ XE TỐT NHẤT</p><p style=\"margin-bottom:16px\">Chúng tôi luôn cam kết mang lại mức giá tốt nhất thị trường cho quý khách, cùng với sự tư vấn tận tâm, chuyên nghiệp nhất.</p><p style=\"font-weight:bold;margin-bottom:8px;\">✪ TƯ VẤN TẬN TÌNH</p><p style=\"margin-bottom:16px\">Với kinh nghiệm nhiều năm bán xe VinFast, Chúng tôi tin sẽ giúp quý khách chọn được chiếc xe ưng ý và phù hợp nhất cho bản thân và gia đình.</p><p style=\"font-weight:bold;margin-bottom:8px;\">✪ HỖ TRỢ TRẢ GÓP</p><p style=\"margin-bottom:16px;\">✪ Chúng tôi sẽ giúp Quý khách lựa chọn được cách trả góp với lãi suất cạnh tranh nhất. Phương thức thanh toán tiện lợi với hệ thống ngân hàng tốt nhất.</p><p style=\"font-weight:bold;margin-bottom:8px;\">✪ BẢO HÀNH 5 NĂM</p><p style=\"margin-bottom:16px\">Chiếc xe VinFast của Quý Khách sẽ được bảo hành <strong>5 năm hoặc 150.000km</strong> cùng những dịch vụ chăm sóc khách hàng tốt nhất.</p>"
+    }
+  }
+}
