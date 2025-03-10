@@ -21,6 +21,8 @@
 @use 'components/form-detail';
 @use 'components/price-list-banner';
 @use 'components/table-price';
+@use 'components/price-list-item';
+@use 'components/discount-receipt-box';
 
 //page
 @use 'pages/product';

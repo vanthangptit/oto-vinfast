@@ -16,7 +16,7 @@ import priceListRouter from "./modules/v1/price-list/routes/priceListRoutes";
 
 const app: Application = express();
 const { port } = conf;
-const PORT = port || 9770;
+const PORT = port || 9700;
 
 const init = async () => {
   app.use(bodyParser.json());

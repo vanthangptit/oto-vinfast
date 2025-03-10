@@ -1,9 +1,11 @@
+# Use NodeJS v18.19.0
+
 # To run dev
 `1. npm i`
 
 `2. npm i -g gulp-cli`
 
-`3. npm run dev`
+`3. npm run dev & gulp dev`
 
 ### Now, app will bootstrap with port in config. Default is 8080
 
@@ -11,9 +13,6 @@
 `/[scripts, styles]`
 
 #Edit file `.env.example` to `.env`
-
-#Config mysql in docker
-`Change config of app. Default value is example`
 
 ## Run DOCKER
 `docker-compose up --build`
