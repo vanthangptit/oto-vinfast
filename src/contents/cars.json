@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Vinfast VF3",
+    "price": "299000000",
+    "currency": "VND",
+    "image": "/static/images/products/vinfast-vf3-list.jpg"
+  },
+  {
+    "id": 2,
+    "name": "VinFast VF5",
+    "price": "529000000",
+    "currency": "VND",
+    "image": "/static/images/products/vinfast-vf5-list.jpg"
+  },
+  {
+    "id": 3,
+    "name": "VinFast VF6",
+    "price": "689000000",
+    "currency": "VND",
+    "image": "/static/images/products/vinfast-vf6-list.jpg"
+  },
+  {
+    "id": 4,
+    "name": "VinFast VF7",
+    "price": "799000000",
+    "currency": "VND",
+    "image": "/static/images/products/vinfast-vf7-list.jpg"
+  },
+  {
+    "id": 5,
+    "name": "VinFast VF8",
+    "price": "1019000000",
+    "currency": "VND",
+    "image": "/static/images/products/vinfast-vf8-list.jpg"
+  },
+  {
+    "id": 6,
+    "name": "VinFast VF9",
+    "price": "1499000000",
+    "currency": "VND",
+    "image": "/static/images/products/vinfast-vf9-list.jpg"
+  }
+]

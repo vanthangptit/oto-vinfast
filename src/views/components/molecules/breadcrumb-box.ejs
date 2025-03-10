@@ -1,0 +1,17 @@
+<div class="breadcrumb-box">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <% for(var i = 0; i < data.length; i++) { %>
+                    <% if (data[i].link) { %>
+                        <li class="breadcrumb-item">
+                            <a href="<%= data[i].link %>"><%= data[i].name %></a>
+                        </li>
+                    <% } else { %>
+                        <li class="breadcrumb-item active" style="opacity: 0.7;"><%= data[i].name %></li>
+                    <% } %>
+                <% } %>
+            </ol>
+        </nav>
+    </div>
+</div>

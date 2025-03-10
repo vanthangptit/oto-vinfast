@@ -11,7 +11,7 @@ export const productController = async (
   next: NextFunction
 ) => {
   try {
-    const data = getEntity('production');
+    const data = getEntity('product');
     const header = getEntity('header');
     const footer = getEntity('footer');
 

@@ -11,7 +11,8 @@ export const productDetailController = async (
   next: NextFunction
 ) => {
   try {
-    const data = getEntity('production');
+    console.log(req)
+    const data = getEntity('product-detail');
     const header = getEntity('header');
     const footer = getEntity('footer');
     const cities = getEntity('cities');

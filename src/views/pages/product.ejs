@@ -5,19 +5,8 @@
   <%- include('../layout/header', { data: header }); %>
 
   <main>
-    <section aria-label="breadcrumb-box">
-      <div class="breadcrumb-box">
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="/">Trang chủ</a>
-              </li>
-              <li class="breadcrumb-item active" style="opacity: 0.7;" aria-current="page">Sản phẩm</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+    <section aria-label="breadcrumb">
+      <%- include('../components/molecules/breadcrumb-box', { data: data.breadcrumb }); %>
     </section>
     <section class="product" aria-label="content page">
       <div class="container">

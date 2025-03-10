@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "group": 1,
+    "shortUrl": "vinfast-vf3",
+    "name": "Vinfast VF3",
+    "price": "299000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf3-2024.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 2,
+    "group": 2,
+    "shortUrl": "vinfast-vf5-plus",
+    "name": "VinFast VF5 Plus",
+    "price": "529000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf5-plus.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 3,
+    "group": 3,
+    "shortUrl": "vinfast-vf6-eco",
+    "name": "VinFast VF6 Eco",
+    "price": "689000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf6-eco.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 4,
+    "group": 3,
+    "shortUrl": "vinfast-vf6-plus",
+    "name": "VinFast VF6 Plus",
+    "price": "749000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf6-plus.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 5,
+    "group": 4,
+    "shortUrl": "vinfast-vf7-eco",
+    "name": "VinFast VF7 Eco",
+    "price": "799000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf7-eco.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 6,
+    "group": 4,
+    "shortUrl": "vinfast-vf7-plus",
+    "name": "VinFast VF7 Plus",
+    "options": [
+      {
+        "ceiling": "Trần thép",
+        "price": "949000000"
+      },
+      {
+        "ceiling": "Trần kính",
+        "price": "969000000"
+      }
+    ],
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf7-plus.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 7,
+    "group": 5,
+    "shortUrl": "vinfast-vf8-eco",
+    "name": "VinFast VF8 Eco",
+    "price": "1019000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf8-eco.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 8,
+    "group": 5,
+    "shortUrl": "vinfast-vf8-plus",
+    "name": "VinFast VF8 Plus",
+    "price": "1199000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf8-plus.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 9,
+    "group": 6,
+    "shortUrl": "vinfast-vf9-eco",
+    "name": "VinFast VF9 Eco",
+    "price": "1499000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf9-eco.jpg",
+    "image": [],
+    "content": ""
+  },
+  {
+    "id": 10,
+    "group": 6,
+    "shortUrl": "vinfast-vf9-plus",
+    "name": "VinFast VF9 Plus",
+    "price": "1699000000",
+    "currency": "VND",
+    "banner": "/static/images/products/discount/vinfast-vf9-plus.jpg",
+    "image": [],
+    "content": ""
+  }
+]

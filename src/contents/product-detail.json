@@ -1,0 +1,16 @@
+{
+  "titlePage": "Detail page",
+  "breadcrumb": [
+    {
+      "name": "Trang chủ",
+      "link": "/"
+    },
+    {
+      "name": "Sản phẩm",
+      "link": "/"
+    },
+    {
+      "name": "Detail"
+    }
+  ]
+}

@@ -1,3 +1,12 @@
 {
-  "titlePage": "Bảng Giá Xe VinFast Mới Nhất tại Viet Thang"
+  "titlePage": "Bảng Giá Xe VinFast Mới Nhất tại Vinfast Smartcity 3S",
+  "breadcrumb": [
+    {
+      "name": "Trang chủ",
+      "link": "/"
+    },
+    {
+      "name": "Bảng giá"
+    }
+  ]
 }

@@ -35,7 +35,7 @@ const init = async () => {
   // Route Pages
   app.use('/', homeRouter);
   app.use('/san-pham.html', productRouter);
-  app.use('/san-pham/detail.html', productDetailRouter);
+  app.use('/san-pham/', productDetailRouter);
   app.use('/bang-gia-xe-vinfast.html', priceListRouter);
 
   // Static files

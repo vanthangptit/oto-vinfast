@@ -1,5 +1,14 @@
 {
   "titlePage": "Sản phẩm",
+  "breadcrumb": [
+    {
+      "name": "Trang chủ",
+      "link": "/"
+    },
+    {
+      "name": "Sản phẩm"
+    }
+  ],
   "products": [
     {
       "href": "/",

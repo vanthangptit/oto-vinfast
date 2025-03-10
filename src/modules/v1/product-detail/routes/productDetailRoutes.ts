@@ -7,7 +7,7 @@ const productDetailRouter = express.Router();
  * @method GET::Home page
  */
 productDetailRouter.get(
-  '/',
+  '/:shortUrl',
   productDetailController
 );
 
