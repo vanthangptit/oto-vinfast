@@ -37,6 +37,7 @@ const init = async () => {
   app.use('/san-pham.html', productRouter);
   app.use('/san-pham/detail.html', productDetailRouter);
   app.use('/bang-gia-xe-vinfast.html', priceListRouter);
+  app.use('/lien-he.html', contactRouter);
 
   // Static files
   app.use('/static', express.static(__dirname + '/../dist'));

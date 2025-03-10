@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <%- include('../layout/head'); %>
+    <body>
+        <%- include('../layout/header', { data: header }); %>
+
+        <main>
+            <div class="section-header">
+                <h3 class="section-title">Liên hệ</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-contact-info">
+                    <span class="box-contact-info-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                        <p class="box-contact-info-text">Tầng 1, Vincom Mega Mall Smart City Tây Mỗ, Nam Từ Liêm, Hà Nội</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-contact-info">
+                        <span class="box-contact-info-icon"><i class="fa fa-life-ring"></i></span>
+                        <p class="box-contact-info-text">
+                            <a href="tel:0962110696" title="Gọi ngay cho Chúng tôi">0962.110.696</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-contact-info">
+                        <span class="box-contact-info-icon"><i class="fa fa-globe"></i></span>
+                        <p class="box-contact-info-text">
+                            <a href="https://vinfastauto3s.com.vn" title="Website chính thức" target="_blank">https://vinfastauto3s.com.vn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <%- include('../layout/footer', { data: footer }); %>
+        <%- include('../layout/scripts'); %>
+    </body>
+</html>

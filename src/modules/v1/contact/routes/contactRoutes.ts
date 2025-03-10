@@ -8,15 +8,23 @@ import {
 import {
   contactValidation
 } from './validations/contactValidation';
-import { contactCreateCtrl } from '../controllers/contactController';
+import {
+  contactCreateCtrl,
+  contactGetCtrl
+} from '../controllers/contactController';
 
 const contactRouter = express.Router();
 
 /**
- * @method POST::Create comment
+ * @method GET::Get contact
+ */
+contactRouter.get('/', contactGetCtrl);
+
+/**
+ * @method POST::Create contact
  */
 contactRouter.post(
-  '/:id',
+  '/',
   contactValidation(),
   isValidationResult,
   rateLimitMiddleware,

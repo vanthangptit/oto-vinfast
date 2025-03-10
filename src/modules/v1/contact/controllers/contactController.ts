@@ -1,8 +1,27 @@
 import { Request, Response, NextFunction } from 'express';
 
-import { appError } from '../../../../utils';
+import { appError, getEntity } from '../../../../utils';
 import { Contact } from '../models/Contact';
 import { startSession } from 'mongoose';
+
+/**
+ * Get data of comment page
+ */
+export const contactGetCtrl = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const data = getEntity('contact');
+    const header = getEntity('header');
+    const footer = getEntity('footer');
+
+    return res.render('contact', { data: { ...data }, header, footer });
+  } catch (e: any) {
+    return next(appError(e.message));
+  }
+};
 
 /**
  * Create comment
